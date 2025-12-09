@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: fb6e1d2fdcb52ba46b19412c6aa42ec1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8955771888267437072
+    second: Lixos_0
+  - first:
+      213: -4584998478019052992
+    second: Lixos_1
+  - first:
+      213: 5549489025193753105
+    second: Lixos_2
+  - first:
+      213: -172782418449093618
+    second: Lixos_3
+  - first:
+      213: -7053738700704681515
+    second: Lixos_4
+  - first:
+      213: -7893975712582061702
+    second: Lixos_5
+  - first:
+      213: -2343526964705958740
+    second: Lixos_6
+  - first:
+      213: -177167118145291229
+    second: Lixos_7
+  - first:
+      213: -7027364702207630890
+    second: Lixos_8
+  - first:
+      213: -2612088133672307017
+    second: Lixos_9
+  - first:
+      213: -1297870107282431846
+    second: Lixos_10
+  - first:
+      213: 6729408234859775158
+    second: Lixos_11
+  - first:
+      213: 5975287217435897104
+    second: Lixos_12
+  - first:
+      213: 2566337161224184039
+    second: Lixos_13
+  - first:
+      213: -4664475080546768822
+    second: Lixos_14
+  - first:
+      213: 3296855351600341000
+    second: Lixos_15
+  - first:
+      213: -7181262242893485674
+    second: Lixos_16
+  - first:
+      213: -502761524312365044
+    second: Lixos_17
+  - first:
+      213: 8204117862705170439
+    second: Lixos_18
+  - first:
+      213: -1547160734021098810
+    second: Lixos_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lixos_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 491
+        width: 365
+        height: 397
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fbd366dae4b6b380800000000000000
+      internalID: -8955771888267437072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lixos_1
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 514
+        width: 325
+        height: 307
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04ab7f53d20de50c0800000000000000
+      internalID: -4584998478019052992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lixos_2
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 502
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11a3a9faddeb30d40800000000000000
+      internalID: 5549489025193753105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lixos_3
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 509
+        width: 353
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0ca8ec4e472a9df0800000000000000
+      internalID: -172782418449093618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lixos_4
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 70
+        width: 386
+        height: 379
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d1721626061c1e90800000000000000
+      internalID: -7053738700704681515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lixos_5
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 93
+        width: 308
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a713cf9d9e6f27290800000000000000
+      internalID: -7893975712582061702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lixos_6
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 117
+        width: 253
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca4e62364ae1a7fd0800000000000000
+      internalID: -2343526964705958740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b34820a795dc3d744ac05b682d037622
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Lixos_0: -8955771888267437072
+      Lixos_1: -4584998478019052992
+      Lixos_10: -1297870107282431846
+      Lixos_11: 6729408234859775158
+      Lixos_12: 5975287217435897104
+      Lixos_13: 2566337161224184039
+      Lixos_14: -4664475080546768822
+      Lixos_15: 3296855351600341000
+      Lixos_16: -7181262242893485674
+      Lixos_17: -502761524312365044
+      Lixos_18: 8204117862705170439
+      Lixos_19: -1547160734021098810
+      Lixos_2: 5549489025193753105
+      Lixos_3: -172782418449093618
+      Lixos_4: -7053738700704681515
+      Lixos_5: -7893975712582061702
+      Lixos_6: -2343526964705958740
+      Lixos_7: -177167118145291229
+      Lixos_8: -7027364702207630890
+      Lixos_9: -2612088133672307017
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
