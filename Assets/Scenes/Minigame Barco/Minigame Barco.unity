@@ -1625,8 +1625,8 @@ MonoBehaviour:
   painelFimDeJogo: {fileID: 399443636}
   textoResultadoPeixes: {fileID: 1567403787}
   textoResultadoEnergia: {fileID: 1881140658}
-  nomeDaCenaDeSaida: Main Menu
-  peixesParaUmaEnergia: 3
+  nomeDaCenaDeSaida: Mapa Mundi
+  peixesParaUmaEnergia: 5
   musicAudioSource: {fileID: 749454168}
   sfxAudioSource: {fileID: 749454167}
   backgroundMusicClip: {fileID: 8300000, guid: 88d67752a8c8c6545b049054feb00353, type: 3}

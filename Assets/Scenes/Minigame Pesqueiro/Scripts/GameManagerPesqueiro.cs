@@ -12,11 +12,8 @@ public class GameManagerPesqueiro : MonoBehaviour
     public float tempoDeVidaDoPeixe = 4f; 
     
     [Header("Sistema de Risco (Redes)")]
-    [Tooltip("A altura Y onde estão as bandeiras/rede")]
     public float alturaDasBandeirasY = 0f; 
-    [Tooltip("Distância a partir das bandeiras onde o risco chega a zero")]
     public float distanciaDeSeguranca = 3f; 
-    [Tooltip("A chance máxima de morrer se o peixe nascer EXATAMENTE em cima da bandeira (0-100)")]
     public float riscoMaximoPorcentagem = 80f; 
 
     [Header("UI Game Over (Morte)")]
@@ -32,8 +29,14 @@ public class GameManagerPesqueiro : MonoBehaviour
     public TextMeshProUGUI textoResultadoPeixes;
     public TextMeshProUGUI textoResultadoEnergia;
 
-    [Header("Configuração de Saída e Energia")]
-    public string nomeDaCenaDeSaida = "MenuInicial";
+    [Header("Configuração de Cenas")]
+    [Tooltip("Nome da cena do Mapa (Para onde vai se ganhar)")]
+    public string nomeCenaMapa = "ViagemAlbatroz";
+    
+    [Tooltip("Nome da cena do Menu Principal (Para onde vai se morrer/reiniciar)")]
+    public string nomeCenaMenu = "MenuInicial";
+
+    [Header("Energia")]
     public int peixesParaUmaEnergia = 3;
 
     private float tempoRestante;
@@ -66,13 +69,11 @@ public class GameManagerPesqueiro : MonoBehaviour
         peixesPegos = 0;
         jogoRodando = true;
         
-        // Garante que os painéis comecem fechados
         if(painelFimDeJogo != null) painelFimDeJogo.SetActive(false);
         if(painelGameOverRede != null) painelGameOverRede.SetActive(false);
         
         AtualizarUI();
 
-        // Toca a música com segurança
         if (musicAudioSource != null && backgroundMusicClip != null)
         {
             musicAudioSource.clip = backgroundMusicClip;
@@ -107,12 +108,10 @@ public class GameManagerPesqueiro : MonoBehaviour
         }
     }
 
-    // --- FUNÇÃO CHAMADA PELA AVE (COM RISCO) ---
     public void TentarRegistrarPeixe(float chanceDeMorteDoPeixe)
     {
         if (!jogoRodando) return;
 
-        // Sorteio do risco
         float sorteio = Random.Range(0f, 100f);
 
         if (sorteio < chanceDeMorteDoPeixe)
@@ -121,7 +120,6 @@ public class GameManagerPesqueiro : MonoBehaviour
         }
         else
         {
-            // Sucesso
             peixesPegos++;
             AtualizarUI();
             if (sfxAudioSource != null && catchFishSoundClip != null)
@@ -131,70 +129,87 @@ public class GameManagerPesqueiro : MonoBehaviour
         }
     }
 
-    // --- GAME OVER POR MORTE (REDE) ---
+    // --- GAME OVER (MORTE) ---
     void GameOverMorteNaRede()
     {
         jogoRodando = false;
         Time.timeScale = 0f;
 
-        // BLINDAGEM: Só para a música se o objeto de áudio ainda existir
-        if(musicAudioSource != null && musicAudioSource.gameObject != null) 
-        {
-            musicAudioSource.Stop();
-        }
+        if(musicAudioSource != null) musicAudioSource.Stop();
 
         Debug.Log("GAME OVER: A ave ficou presa na rede!");
 
+        // Abre o painel de morte. 
+        // O botão deste painel deve chamar a função "BotaoReiniciarTudo()"
         if (painelGameOverRede != null) painelGameOverRede.SetActive(true);
     }
 
-    // --- FIM DE JOGO POR TEMPO (VITÓRIA) ---
+    // --- FIM DE JOGO (VITÓRIA / TEMPO ACABOU) ---
     void TerminarJogoVitoria()
     {
         jogoRodando = false;
         Time.timeScale = 0f; 
         
-        // BLINDAGEM: Só para a música se o objeto de áudio ainda existir
-        if(musicAudioSource != null && musicAudioSource.gameObject != null) 
-        {
-            musicAudioSource.Stop();
-        }
+        if(musicAudioSource != null) musicAudioSource.Stop();
 
-        // Cálculo de Energia
+        // 1. Cálculo da Energia Ganha
         int energiaGanha = 0;
         if (peixesParaUmaEnergia > 0) energiaGanha = peixesPegos / peixesParaUmaEnergia;
+
+        // 2. Integração com Mapa (Salvar Energia)
+        int energiaAnterior = PlayerPrefs.GetInt("EnergiaPlayer", 5);
+        int energiaFinal = energiaAnterior + energiaGanha;
+        
+        if (energiaFinal > 10) energiaFinal = 10;
+        if (energiaFinal < 0) energiaFinal = 0;
+
+        PlayerPrefs.SetInt("EnergiaPlayer", energiaFinal);
+        PlayerPrefs.Save();
+        
+        Debug.Log($"PESQUEIRO VITORIA: Salvo {energiaFinal} de energia.");
 
         // Atualiza UI
         if(textoResultadoPeixes != null) textoResultadoPeixes.text = $"Total de Peixes: {peixesPegos}";
         if(textoResultadoEnergia != null) textoResultadoEnergia.text = $"Parabéns!\nGanhou +{energiaGanha} de Energia.";
 
-        // Salva Energia
-        int energiaTotal = PlayerPrefs.GetInt("EnergiaTotalGlobal", 0);
-        PlayerPrefs.SetInt("EnergiaTotalGlobal", energiaTotal + energiaGanha);
-
+        // Abre o painel de vitória.
+        // O botão deste painel deve chamar a função "BotaoContinuarParaMapa()"
         if(painelFimDeJogo != null) painelFimDeJogo.SetActive(true);
     }
 
-    // --- FUNÇÃO DO BOTÃO SAIR (VERSÃO HARD RESET) ---
-    public void VoltarParaCenaPrincipal()
+    // ---------------------------------------------------------------
+    // FUNÇÕES PARA OS BOTÕES (ARRAS-TE PARA O ONCLICK DA UI)
+    // ---------------------------------------------------------------
+
+    // Use esta função no botão "Continuar" do Painel de VITÓRIA
+    public void BotaoContinuarParaMapa()
     {
-        // 1. Garante que o jogo despause
+        Time.timeScale = 1f;
+        // Carrega o Mapa Mundi e mantém o progresso salvo
+        SceneManager.LoadScene(nomeCenaMapa);
+    }
+
+    // Use esta função no botão "Game Over" do Painel de DERROTA (REDE)
+    public void BotaoReiniciarTudo()
+    {
         Time.timeScale = 1f;
 
-        // 2. O TRUQUE DO RESET:
-        // Se o AudioManager estiver vivo, nós o destruímos explicitamente.
-        // Isso remove qualquer referência "fantasma" que ele esteja segurando.
+        // 1. APAGA TODO O PROGRESSO (Posição volta pro início, Energia volta pra 5)
+        PlayerPrefs.DeleteAll();
+        Debug.Log("RESET TOTAL: Progresso apagado.");
+
+        // 2. Destroi o AudioManager para garantir que o som reinicie limpo no Menu
         if (AudioManager.instance != null)
         {
             Destroy(AudioManager.instance.gameObject);
         }
 
-        // 3. Carrega a cena do Menu
-        // Quando o Menu carregar, ele vai criar um NOVO AudioManager limpo.
-        SceneManager.LoadScene(nomeDaCenaDeSaida);
+        // 3. Volta para o MENU INICIAL
+        SceneManager.LoadScene(nomeCenaMenu);
     }
 
-    // --- AUXILIARES DE UI ---
+    // ---------------------------------------------------------------
+
     void AtualizarUI() 
     { 
         if(textoPeixes != null) textoPeixes.text = $"Peixes: {peixesPegos}"; 
@@ -206,7 +221,6 @@ public class GameManagerPesqueiro : MonoBehaviour
         if(textoTempo != null) textoTempo.text = $"Tempo: {seg}"; 
     }
 
-    // --- LÓGICA DO SPAWNER ---
     void TentarSpawnarPeixe()
     {
         for (int i = 0; i < 10; i++)
@@ -234,15 +248,11 @@ public class GameManagerPesqueiro : MonoBehaviour
         if (peixePrefab != null)
         {
             GameObject novoPeixe = Instantiate(peixePrefab, posicao, Quaternion.identity);
-            
-            // Busca o script PeixePesqueiro (específico deste minigame)
             PeixePesqueiro controller = novoPeixe.GetComponent<PeixePesqueiro>();
             
             if (controller != null) 
             {
                 controller.tempoDeVida = tempoDeVidaDoPeixe;
-
-                // Cálculo do Risco
                 float distanciaAteBandeira = Mathf.Abs(posicao.y - alturaDasBandeirasY);
                 float fatorDeRisco = 1f - Mathf.Clamp01(distanciaAteBandeira / distanciaDeSeguranca);
                 controller.chanceDeMorte = fatorDeRisco * riscoMaximoPorcentagem;
@@ -252,17 +262,14 @@ public class GameManagerPesqueiro : MonoBehaviour
     
     void OnDrawGizmosSelected()
     {
-        // Desenha a área de spawn (Ciano)
         Gizmos.color = Color.cyan;
         Vector3 centroGlobal = (Application.isPlaying) ? (Vector3)centroDaArea : transform.position + (Vector3)centroDaArea;
         Gizmos.DrawWireCube(centroGlobal, tamanhoDaArea);
 
-        // Desenha a LINHA DAS BANDEIRAS (Vermelho)
         Gizmos.color = Color.red;
         Vector3 linhaBandeira = new Vector3(centroGlobal.x, alturaDasBandeirasY, 0);
         Gizmos.DrawLine(linhaBandeira + Vector3.left * 5, linhaBandeira + Vector3.right * 5);
         
-        // Desenha a ÁREA DE PERIGO (Amarelo transparente)
         Gizmos.color = new Color(1, 0, 0, 0.2f);
         Gizmos.DrawCube(linhaBandeira, new Vector3(10, distanciaDeSeguranca * 2, 0));
     }

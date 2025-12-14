@@ -1933,7 +1933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   tempoDeJogo: 30
-  nomeCenaPrincipal: Main Menu
+  nomeCenaPrincipal: Mapa Mundi
   peixesColetados: 0
   textoContadorPeixes: {fileID: 1044770327}
   textoTimer: {fileID: 2139748119}

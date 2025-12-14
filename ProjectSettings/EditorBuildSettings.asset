@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Cutscene Inicial/Cutscene Inicial.unity
     guid: a49025a07f9054c4e944119512caa341
   - enabled: 1
+    path: Assets/Scenes/Mapa mundi/Mapa Mundi.unity
+    guid: 9298c6a0f8ab13e4a9e016a7c48202bd
+  - enabled: 1
     path: Assets/Scenes/Minigame Peixe/Minigame Peixe.unity
     guid: 192f6b09139a11d41872491a0eea0971
   - enabled: 1

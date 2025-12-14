@@ -356,7 +356,7 @@ MonoBehaviour:
   musicAudioSource: {fileID: 227046613}
   windCollectSound: {fileID: 8300000, guid: b74fdd8c60558174f99143d70c094269, type: 3}
   backgroundMusicClip: {fileID: 8300000, guid: 88d67752a8c8c6545b049054feb00353, type: 3}
-  tempoTotalDoMinigame: 15
+  tempoTotalDoMinigame: 30
   playerMovement: {fileID: 682040457}
   windSpawner: {fileID: 1815823490}
   textoVelocidade: {fileID: 283273757}
@@ -364,7 +364,7 @@ MonoBehaviour:
   painelFimDeJogo: {fileID: 537327029}
   textoVelocidadeMedia: {fileID: 635098307}
   textoResultadoEnergia: {fileID: 1491835028}
-  nomeDaCenaDeSaida: Main Menu
+  nomeDaCenaDeSaida: Mapa Mundi
 --- !u!82 &227046613
 AudioSource:
   m_ObjectHideFlags: 0

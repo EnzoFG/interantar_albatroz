@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Audio;
 using TMPro;
-using UnityEngine.SceneManagement; // <-- NECESSÁRIO PARA MUDAR DE CENA
+using UnityEngine.SceneManagement;
 
 public class GameManagerLixo : MonoBehaviour
 {
@@ -40,18 +40,17 @@ public class GameManagerLixo : MonoBehaviour
     private float timer;
     private float lastSpawnY = 0f;
 
-    // --- SEÇÃO NOVA: FIM DE JOGO ---
     [Header("UI de Fim de Jogo")]
     public GameObject painelFimDeJogo;
-    public TextMeshProUGUI textoResultadoLixos;  // Texto no painel
-    public TextMeshProUGUI textoResultadoEnergia; // Texto no painel
+    public TextMeshProUGUI textoResultadoLixos;  
+    public TextMeshProUGUI textoResultadoEnergia; 
 
     [Header("Configuração de Saída")]
     [Tooltip("Para qual cena voltar ao clicar no botão")]
-    public string nomeDaCenaDeSaida = "MenuInicial";
+    public string nomeDaCenaDeSaida = "ViagemAlbatroz"; // <--- Ajustado para o Mapa
+    
     [Tooltip("Quantos lixos consumidos = -1 de energia")]
     public int lixosPorEnergiaPerdida = 5;
-    // --- FIM DA SEÇÃO NOVA ---
 
     void Awake()
     {
@@ -74,15 +73,18 @@ public class GameManagerLixo : MonoBehaviour
         lixosConsumidos = 0;
         jogoRodando = true;
         
-        // Esconde o painel de fim de jogo ao começar
         painelFimDeJogo.SetActive(false);
-
-        // Ativa a UI principal do jogo
         textoTempo.gameObject.SetActive(true);
         textoLixosConsumidos.gameObject.SetActive(true);
 
         AtualizarUITempo();
         AtualizarUILixos();
+
+        // --- TESTE DE CONEXÃO ---
+        if (PlayerPrefs.HasKey("EnergiaPlayer"))
+        {
+            Debug.Log("LIXO START: Energia recebida: " + PlayerPrefs.GetInt("EnergiaPlayer"));
+        }
     }
 
     void Update()
@@ -97,7 +99,7 @@ public class GameManagerLixo : MonoBehaviour
         else
         {
             tempoRestante = 0;
-            AtualizarUITempo(); // Atualiza uma última vez para mostrar "Tempo: 0"
+            AtualizarUITempo(); 
             TerminarJogo();
         }
 
@@ -110,56 +112,65 @@ public class GameManagerLixo : MonoBehaviour
         }
     }
 
-    // --- FUNÇÃO TERMINARJOGO (ATUALIZADA) ---
     void TerminarJogo()
     {
         jogoRodando = false;
-        Time.timeScale = 0f; // Pausa o jogo
-        musicAudioSource.Stop();
+        Time.timeScale = 0f; 
+        if(musicAudioSource) musicAudioSource.Stop();
 
-        // Esconde a UI principal do jogo
         textoTempo.gameObject.SetActive(false);
         textoLixosConsumidos.gameObject.SetActive(false);
 
-        // --- LÓGICA DE CÁLCULO E RECOMPENSA ---
+        // --- CÁLCULO DE ENERGIA ---
 
-        // 1. Calcular Energia
+        // 1. Calcular Penalidade (Quanto perdeu)
         int energiaPerdida = 0;
-        if (lixosPorEnergiaPerdida > 0) // Evita divisão por zero
+        if (lixosPorEnergiaPerdida > 0) 
         {
-            // Usa divisão inteira. Ex: 9 lixos / 5 = 1. 10 lixos / 5 = 2.
             energiaPerdida = Mathf.FloorToInt((float)lixosConsumidos / lixosPorEnergiaPerdida);
         }
         
-        // A "variável" que será passada para o jogo principal (é um valor negativo)
-        int energiaGanhaOuPerdida = -energiaPerdida;
+        // --- SISTEMA DE INTEGRAÇÃO ---
 
-        // 2. Atualizar Textos do Painel
-        textoResultadoLixos.text = $"Lixos Consumidos: {lixosConsumidos}";
-        textoResultadoEnergia.text = $"Você consumiu {lixosConsumidos} lixos e perdeu {energiaPerdida} de energia.";
-
-        // 3. Salvar no PlayerPrefs (o "fácil de obter")
-        // Pega a energia que o jogador já tem
-        int energiaTotalAtual = PlayerPrefs.GetInt("EnergiaTotalGlobal", 0);
-        // Soma o resultado (que é negativo, então subtrai)
-        int novaEnergiaTotal = energiaTotalAtual + energiaGanhaOuPerdida;
-        // Salva o novo total
-        PlayerPrefs.SetInt("EnergiaTotalGlobal", novaEnergiaTotal);
+        // 2. Ler energia anterior (Segurança: 5)
+        int energiaAnterior = PlayerPrefs.GetInt("EnergiaPlayer", 5);
         
-        Debug.Log($"Energia perdida: {energiaPerdida}. Nova energia total salva: {novaEnergiaTotal}");
+        // 3. Subtrair a penalidade
+        int energiaFinal = energiaAnterior - energiaPerdida;
+        
+        // 4. Travar limites (0 a 10)
+        if (energiaFinal > 10) energiaFinal = 10;
+        if (energiaFinal < 0) energiaFinal = 0;
 
-        // 4. Mostrar o Painel
+        // 5. Salvar
+        PlayerPrefs.SetInt("EnergiaPlayer", energiaFinal);
+        PlayerPrefs.Save();
+        
+        Debug.Log($"LIXO FIM: Tinha {energiaAnterior}. Perdeu {energiaPerdida}. Ficou com {energiaFinal}.");
+        // -----------------------------
+
+        // Atualizar UI do Painel
+        textoResultadoLixos.text = $"Lixos Consumidos: {lixosConsumidos}";
+        
+        if (energiaPerdida > 0)
+        {
+            textoResultadoEnergia.text = $"Cuidado! Lixo faz mal.\nEnergia Perdida: -{energiaPerdida}";
+        }
+        else
+        {
+            textoResultadoEnergia.text = $"Muito bem! Você evitou o lixo.\nEnergia Mantida.";
+        }
+
         painelFimDeJogo.SetActive(true);
     }
 
-    // --- NOVA FUNÇÃO PÚBLICA PARA O BOTÃO ---
     public void VoltarParaCenaPrincipal()
     {
         if (AudioManager.instance != null)
         {
             AudioManager.instance.PlayClickSound();
         }
-        Time.timeScale = 1f; // Despausa o jogo antes de sair
+        Time.timeScale = 1f; 
         SceneManager.LoadScene(nomeDaCenaDeSaida);
     }
 
@@ -190,7 +201,6 @@ public class GameManagerLixo : MonoBehaviour
         }
     }
     
-    // ... (Restante das funções de Spawner, Som, etc. sem mudanças) ...
     void SetNextSpawnTime()
     { 
         timer = Random.Range(spawnIntervalMin, spawnIntervalMax); 
@@ -214,21 +224,22 @@ public class GameManagerLixo : MonoBehaviour
     
     void SpawnTrash() 
     { 
-        if (trashPrefabs == null || trashPrefabs.Length == 0)
-        {
-            Debug.LogError("O array 'trashPrefabs' no GameManagerLixo está vazio!");
-            return;
-        }
+        if (trashPrefabs == null || trashPrefabs.Length == 0) return;
+        
         int randomIndex = Random.Range(0, trashPrefabs.Length);
         GameObject prefabToSpawn = trashPrefabs[randomIndex];
+        
+        // Lógica de Deadzone mantida original
         float deadZoneBottom = -deadZoneSize / 2f;
         float deadZoneTop = deadZoneSize / 2f;
         float validBottomZone_Min = spawnYMin;
         float validBottomZone_Max = Mathf.Min(deadZoneBottom, spawnYMax); 
         float validTopZone_Min = Mathf.Max(deadZoneTop, spawnYMin);
         float validTopZone_Max = spawnYMax;
+        
         bool bottomZoneIsValid = validBottomZone_Min < validBottomZone_Max;
         bool topZoneIsValid = validTopZone_Min < validTopZone_Max;
+        
         float spawnY;
         int attempts = 0; 
         do
@@ -243,11 +254,11 @@ public class GameManagerLixo : MonoBehaviour
             else
             {
                 spawnY = (spawnYMin + spawnYMax) / 2f;
-                Debug.LogWarning("O tamanho da Dead Zone é maior que a área de spawn!");
             }
             attempts++;
         }
         while (Mathf.Abs(spawnY - lastSpawnY) < minVerticalDistance && attempts < 10);
+        
         lastSpawnY = spawnY;
         Vector3 spawnPosition = new Vector3(spawnXPosition, spawnY, 0);
         Instantiate(prefabToSpawn, spawnPosition, Quaternion.identity);

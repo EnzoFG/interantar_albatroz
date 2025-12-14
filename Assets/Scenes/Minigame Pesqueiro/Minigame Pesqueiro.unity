@@ -416,7 +416,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1343968567}
         m_TargetAssemblyTypeName: GameManagerPesqueiro, Assembly-CSharp
-        m_MethodName: VoltarParaCenaPrincipal
+        m_MethodName: BotaoReiniciarTudo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2116,8 +2116,9 @@ MonoBehaviour:
   painelFimDeJogo: {fileID: 612380692}
   textoResultadoPeixes: {fileID: 1715967866}
   textoResultadoEnergia: {fileID: 499574328}
-  nomeDaCenaDeSaida: Main Menu
-  peixesParaUmaEnergia: 3
+  nomeCenaMapa: Mapa Mundi
+  nomeCenaMenu: Main Menu
+  peixesParaUmaEnergia: 5
   musicAudioSource: {fileID: 1343968566}
   sfxAudioSource: {fileID: 1343968565}
   backgroundMusicClip: {fileID: 8300000, guid: 88d67752a8c8c6545b049054feb00353, type: 3}
@@ -2224,9 +2225,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManagerBarco, Assembly-CSharp
-        m_MethodName: VoltarParaCenaPrincipal
+      - m_Target: {fileID: 1343968567}
+        m_TargetAssemblyTypeName: GameManagerPesqueiro, Assembly-CSharp
+        m_MethodName: BotaoContinuarParaMapa
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

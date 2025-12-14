@@ -16,19 +16,17 @@ public class GameManagerBarco : MonoBehaviour
     public TextMeshProUGUI textoTempo;
     public TextMeshProUGUI textoPeixes;
     
-    // --- NOVO: UI DE FIM DE JOGO ---
     [Header("UI Fim de Jogo")]
     public GameObject painelFimDeJogo;
     public TextMeshProUGUI textoResultadoPeixes;
     public TextMeshProUGUI textoResultadoEnergia;
 
-    // --- NOVO: CONFIGURAÇÕES DE RECOMPENSA E SAÍDA ---
     [Header("Configuração de Saída e Energia")]
     [Tooltip("Nome da cena para onde ir ao clicar em Continuar")]
-    public string nomeDaCenaDeSaida = "MenuInicial";
+    public string nomeDaCenaDeSaida = "ViagemAlbatroz"; // <--- Ajustado
     
     [Tooltip("Quantos peixes são necessários para ganhar 1 de energia")]
-    public int peixesParaUmaEnergia = 3; // Ex: A cada 3 peixes = 1 energia
+    public int peixesParaUmaEnergia = 3; 
 
     private float tempoRestante;
     private int peixesPegos = 0;
@@ -59,7 +57,7 @@ public class GameManagerBarco : MonoBehaviour
         tempoRestante = tempoTotalDoMinigame;
         peixesPegos = 0;
         jogoRodando = true;
-        painelFimDeJogo.SetActive(false); // Garante que comece fechado
+        painelFimDeJogo.SetActive(false); 
         AtualizarUI();
 
         if (musicAudioSource != null && backgroundMusicClip != null)
@@ -67,6 +65,12 @@ public class GameManagerBarco : MonoBehaviour
             musicAudioSource.clip = backgroundMusicClip;
             musicAudioSource.loop = true;
             musicAudioSource.Play();
+        }
+
+        // Teste de conexão (padrão dos outros minigames)
+        if (PlayerPrefs.HasKey("EnergiaPlayer"))
+        {
+            Debug.Log("BARCO START: Energia recebida: " + PlayerPrefs.GetInt("EnergiaPlayer"));
         }
     }
 
@@ -109,40 +113,51 @@ public class GameManagerBarco : MonoBehaviour
         }
     }
 
-    // --- LÓGICA DE FIM DE JOGO ---
     void TerminarJogo()
     {
         jogoRodando = false;
-        Time.timeScale = 0f; // Pausa o jogo
-        musicAudioSource.Stop(); // Para a música
+        Time.timeScale = 0f; 
+        if(musicAudioSource) musicAudioSource.Stop(); 
 
-        // 1. Calcula a Energia
+        // 1. Calcula a Energia Ganha
         int energiaGanha = 0;
         if (peixesParaUmaEnergia > 0)
         {
-            // Divisão inteira (Ex: 7 peixes / 3 = 2 energias)
             energiaGanha = peixesPegos / peixesParaUmaEnergia;
         }
 
-        // 2. Atualiza os Textos do Painel
+        // --- SISTEMA DE INTEGRAÇÃO DE ENERGIA (NOVO) ---
+        
+        // 2. Lê a energia anterior (Usa 5 se der erro de leitura)
+        int energiaAnterior = PlayerPrefs.GetInt("EnergiaPlayer", 5);
+        
+        // 3. Soma
+        int energiaFinal = energiaAnterior + energiaGanha;
+        
+        // 4. Limita (0 a 10)
+        if (energiaFinal > 10) energiaFinal = 10;
+        if (energiaFinal < 0) energiaFinal = 0;
+
+        // 5. Salva na chave correta
+        PlayerPrefs.SetInt("EnergiaPlayer", energiaFinal);
+        PlayerPrefs.Save();
+        
+        Debug.Log($"BARCO FIM: Tinha {energiaAnterior}. Ganhou {energiaGanha}. Ficou com {energiaFinal}.");
+        // -----------------------------------------------
+
+        // Atualiza UI
         textoResultadoPeixes.text = $"Peixes Coletados: {peixesPegos}";
-        textoResultadoEnergia.text = $"Energia Ganha: {energiaGanha}";
+        
+        // Formata o texto para ficar bonito (ex: "+1")
+        if (energiaGanha > 0) textoResultadoEnergia.text = $"Energia Ganha: +{energiaGanha}";
+        else textoResultadoEnergia.text = $"Energia Ganha: {energiaGanha}";
 
-        // 3. Salva no Banco de Dados Global (PlayerPrefs)
-        int energiaTotalAtual = PlayerPrefs.GetInt("EnergiaTotalGlobal", 0);
-        int novaEnergiaTotal = energiaTotalAtual + energiaGanha;
-        PlayerPrefs.SetInt("EnergiaTotalGlobal", novaEnergiaTotal);
-
-        Debug.Log($"Peixes: {peixesPegos}. Energia Ganha: {energiaGanha}. Total Salvo: {novaEnergiaTotal}");
-
-        // 4. Mostra o Painel
         painelFimDeJogo.SetActive(true);
     }
 
-    // --- FUNÇÃO DO BOTÃO CONTINUAR ---
     public void VoltarParaCenaPrincipal()
     {
-        Time.timeScale = 1f; // Despausa antes de sair
+        Time.timeScale = 1f; 
         SceneManager.LoadScene(nomeDaCenaDeSaida);
     }
 

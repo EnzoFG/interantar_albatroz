@@ -717,14 +717,14 @@ MonoBehaviour:
   spawnYMax: 2.5
   minVerticalDistance: 2
   deadZoneSize: 2
-  tempoTotalDoMinigame: 45
+  tempoTotalDoMinigame: 30
   textoTempo: {fileID: 604406773}
   textoLixosConsumidos: {fileID: 564332517}
   painelFimDeJogo: {fileID: 1747840885}
   textoResultadoLixos: {fileID: 732587444}
   textoResultadoEnergia: {fileID: 618356239}
-  nomeDaCenaDeSaida: Main Menu
-  lixosPorEnergiaPerdida: 5
+  nomeDaCenaDeSaida: Mapa Mundi
+  lixosPorEnergiaPerdida: 2
 --- !u!4 &396690295
 Transform:
   m_ObjectHideFlags: 0

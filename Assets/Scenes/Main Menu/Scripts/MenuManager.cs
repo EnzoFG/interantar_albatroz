@@ -31,7 +31,7 @@ public class MenuManager : MonoBehaviour
     public void BotaoJogar_Click()
     {
         TocarSomDeClique();
-        SceneManager.LoadScene("Minigame Pesqueiro");
+        SceneManager.LoadScene("Mapa Mundi");
         AudioManager.instance.musicaFundoSource.Stop();
     }
 
