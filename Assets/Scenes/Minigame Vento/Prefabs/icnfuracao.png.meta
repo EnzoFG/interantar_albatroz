@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: ac5579ee6f4e20c49a98772baa7096a2
+guid: f17be104ac876db4d929bd76d808e62d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6953844596800473401
-    second: Vento_0
-  - first:
-      213: 2940475642874101022
-    second: Vento_1
+      213: 3902476565739394904
+    second: icnfuracao_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Vento_0
+      name: icnfuracao_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 70
-        width: 512
-        height: 372
+        y: 0
+        width: 668
+        height: 348
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 939cf8751d4018060800000000000000
-      internalID: 6953844596800473401
+      spriteID: 857de25a2c1682630800000000000000
+      internalID: 3902476565739394904
       vertices: []
       indices: 
       edges: []
@@ -154,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 652e9fe9ea186794d8901619359bb570
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -164,8 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Vento_0: 6953844596800473401
-      Vento_1: 2940475642874101022
+      icnfuracao_0: 3902476565739394904
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
