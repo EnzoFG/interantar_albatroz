@@ -5,6 +5,7 @@ public class PontoMapa : MonoBehaviour
     [Header("Tipo de Ponto")]
     public bool eBifurcacao = false;
     public bool eMinigame = false;
+    public bool ePontoFinal = false; // <--- ADICIONADO: Marque isso no último ponto
 
     [Header("Caminho Padrão")]
     public PontoMapa proximoPonto;
@@ -41,7 +42,24 @@ public class PontoMapa : MonoBehaviour
                 Gizmos.DrawLine(transform.position, primeiroPontoCaminhoBaixo.transform.position);
         }
         
-        Gizmos.color = eMinigame ? Color.cyan : (eBifurcacao ? Color.yellow : Color.blue);
+        // Lógica de Cores para facilitar a visualização no Editor:
+        if (ePontoFinal)
+        {
+            Gizmos.color = Color.magenta; // Final é roxo/magenta
+        }
+        else if (eMinigame)
+        {
+            Gizmos.color = Color.cyan; // Minigame é ciano
+        }
+        else if (eBifurcacao)
+        {
+            Gizmos.color = Color.yellow; // Bifurcação é amarelo
+        }
+        else
+        {
+            Gizmos.color = Color.blue; // Normal é azul
+        }
+
         Gizmos.DrawSphere(transform.position, 0.2f);
     }
 }

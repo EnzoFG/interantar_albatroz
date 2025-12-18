@@ -3,9 +3,10 @@ using UnityEngine.UI;
 
 public class ControlePassaro : MonoBehaviour
 {
-    [Header("Sprites")]
-    public Sprite spriteNormal;
-    public Sprite spriteMergulho;
+    [Header("Sprites e Animação")]
+    // As variáveis de Sprite podem ser mantidas para referência, 
+    // mas o controle visual agora é feito pelo Animator.
+    private Animator anim; 
 
     [Header("Movimento")]
     public float velocidadeMergulho = 5f;
@@ -29,6 +30,8 @@ public class ControlePassaro : MonoBehaviour
     [Header("Rotação")]
     [Tooltip("O ângulo final quando o pássaro está totalmente na vertical. -90 para apontar para baixo.")]
     public float anguloMergulhoCompleto = -90f;
+
+    // Variáveis privadas de controle
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private Vector3 posicaoInicial;
@@ -41,9 +44,11 @@ public class ControlePassaro : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>(); // Inicializa o Animator
+
         posicaoInicial = transform.position;
-        spriteRenderer.sprite = spriteNormal;
         folegoAtual = folegoMaximo;
+
         if (barraDeFolego != null)
         {
             barraDeFolego.maxValue = folegoMaximo;
@@ -53,11 +58,13 @@ public class ControlePassaro : MonoBehaviour
 
     void Update()
     {
+        // Se o jogo acabou, para o movimento e a animação de mergulho
         if (GameManager.instance.JogoAcabou)
-    {
-        rb.linearVelocity = Vector2.zero;
-        return;
-    }
+        {
+            rb.linearVelocity = Vector2.zero;
+            anim.SetBool("isDiving", false); 
+            return;
+        }
 
         GerenciarFolego();
         GerenciarInput();
@@ -75,23 +82,26 @@ public class ControlePassaro : MonoBehaviour
         }
         else
         {
+            // Retorna à posição horizontal imediatamente ao subir
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 
     void AtualizarEstadoPassaro()
     {
+        // Atualiza o parâmetro do Animator com base no estado de mergulho
+        anim.SetBool("isDiving", estaMergulhando);
+
         if (estaMergulhando)
         {
-            spriteRenderer.sprite = spriteMergulho;
+            // Movimento de mergulho (Diagonal para baixo e direita)
             rb.linearVelocity = new Vector2(velocidadeHorizontalMergulho, -velocidadeMergulho);
         }
         else
         {
-            spriteRenderer.sprite = spriteNormal;
-
             if (transform.position.y < posicaoInicial.y)
             {
+                // Movimento de subida e retorno ao X original
                 float velocidadeXRetorno = 0;
                 if (Mathf.Abs(transform.position.x - posicaoInicial.x) > 0.1f)
                 {
@@ -103,6 +113,7 @@ public class ControlePassaro : MonoBehaviour
             }
             else
             {
+                // Estabiliza na posição inicial
                 rb.linearVelocity = Vector2.zero;
                 transform.position = posicaoInicial;
             }
@@ -111,6 +122,7 @@ public class ControlePassaro : MonoBehaviour
 
     void GerenciarInput()
     {
+        // Permite mergulhar apenas se tiver fôlego e não estiver bloqueado pela recuperação
         if (Input.GetMouseButton(0) && !semFolego && !estaRecuperandoFolego)
         {
             estaMergulhando = true;
@@ -130,32 +142,35 @@ public class ControlePassaro : MonoBehaviour
         else
         {
             folegoAtual += taxaGanhoFolego * Time.deltaTime;
-            if (semFolego)
-            {
-                semFolego = false;
-            }
+            if (semFolego) semFolego = false;
         }
+
         folegoAtual = Mathf.Clamp(folegoAtual, 0, folegoMaximo);
+
+        // Lógica de bloqueio por fôlego esgotado
         if (estaRecuperandoFolego && folegoAtual >= folegoMaximo * percentualMinimoParaMergulhar)
         {
             estaRecuperandoFolego = false;
         }
+
         if (folegoAtual <= 0)
         {
             semFolego = true;
             estaRecuperandoFolego = true;
         }
+
         if (barraDeFolego != null)
         {
             barraDeFolego.value = folegoAtual;
         }
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-    if (other.CompareTag("Peixe"))
+        if (other.CompareTag("Peixe"))
         {
-        GameManager.instance.AdicionarPeixe();
-        Destroy(other.gameObject);
+            GameManager.instance.AdicionarPeixe();
+            Destroy(other.gameObject);
         }
     }
 }

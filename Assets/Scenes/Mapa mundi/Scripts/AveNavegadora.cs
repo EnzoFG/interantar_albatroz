@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement; 
 
 public class AveNavegadora : MonoBehaviour
 {
@@ -10,55 +11,66 @@ public class AveNavegadora : MonoBehaviour
     [Header("Referências de UI")]
     public GameObject popupDecisao;
     public PainelMinigame painelMinigame;
+    public GameObject painelVitoria; 
+
+    [Header("Configuração de Fim de Jogo")]
+    public string nomeCenaMenu = "MenuInicial"; 
 
     private bool estaAndando = false;
     private PontoMapa destinoImediato; 
-    
-    // Variável estática para controlar o reset da sessão
     private static bool jogoJaComecou = false;
 
     void Awake()
     {
         if (!jogoJaComecou)
         {
-            // Reseta APENAS a posição e a energia para começar o jogo do zero
             PlayerPrefs.DeleteKey("UltimoPontoMapa"); 
             PlayerPrefs.DeleteKey("EnergiaPlayer");
-            
             jogoJaComecou = true;
-            Debug.Log("RESET DE SESSÃO: Novo jogo iniciado (Posição e Energia resetadas).");
         }
     }
 
     void Start()
     {
-        // Garante que as UIs comecem fechadas
-        if(popupDecisao != null) popupDecisao.SetActive(false);
-        if(painelMinigame != null) painelMinigame.gameObject.SetActive(false);
+        // --- CORREÇÃO 1: GARANTIA DE TEMPO ---
+        // Garante que o jogo não esteja pausado ao voltar de um minigame
+        Time.timeScale = 1f;
 
-        // 1. Tenta carregar o último ponto salvo
-        // (Isso resolve o erro da imagem 1: declaramos a variável apenas uma vez aqui)
+        // Garante que painéis comecem fechados
+        if (painelVitoria != null) painelVitoria.SetActive(false);
+        if (!pontoAtual.eBifurcacao && popupDecisao != null) popupDecisao.SetActive(false);
+        if (painelMinigame != null) painelMinigame.gameObject.SetActive(false);
+
+        // --- CARREGAMENTO DO SAVE ---
         string nomeUltimoPonto = PlayerPrefs.GetString("UltimoPontoMapa", "");
-        
         if (!string.IsNullOrEmpty(nomeUltimoPonto))
         {
             GameObject objPonto = GameObject.Find(nomeUltimoPonto);
             if (objPonto != null) pontoAtual = objPonto.GetComponent<PontoMapa>();
         }
 
-        // 2. Posiciona a ave e decide se deve andar
         if (pontoAtual != null)
         {
             transform.position = pontoAtual.transform.position;
             
-            // Regra importante: Se carregar o jogo e não estivermos numa encruzilhada, 
-            // a ave deve continuar andando automaticamente (simula a volta do minigame)
-            if (pontoAtual.eBifurcacao)
+            // --- CORREÇÃO 2: LÓGICA DE MOVIMENTO NO INÍCIO ---
+            
+            if (pontoAtual.ePontoFinal)
             {
+                // Se nasceu no final, Vitória
+                if (painelVitoria != null) painelVitoria.SetActive(true);
+            }
+            else if (pontoAtual.eBifurcacao)
+            {
+                // Se nasceu na bifurcação, espera escolha
                 if(popupDecisao != null) popupDecisao.SetActive(true);
             }
             else if (pontoAtual.proximoPonto != null)
             {
+                // AQUI ESTAVA O PROBLEMA:
+                // Removemos a verificação "!pontoAtual.eMinigame".
+                // Se carregou a cena e tem um próximo ponto, ela DEVE andar,
+                // mesmo que o ponto atual seja de minigame (pois assume-se que já jogou).
                 MoverPara(pontoAtual.proximoPonto);
             }
         }
@@ -87,13 +99,20 @@ public class AveNavegadora : MonoBehaviour
         pontoAtual = destinoImediato; 
         transform.position = pontoAtual.transform.position; 
         
-        // Salva o progresso
         PlayerPrefs.SetString("UltimoPontoMapa", pontoAtual.name);
         PlayerPrefs.Save();
 
-        if (pontoAtual.eMinigame)
+        // --- AQUI MANTEMOS A LÓGICA DE PARAR ---
+        // Quando ela CHEGA andando, aí sim ela para se for minigame.
+        
+        if (pontoAtual.ePontoFinal)
         {
             estaAndando = false;
+            if (painelVitoria != null) painelVitoria.SetActive(true);
+        }
+        else if (pontoAtual.eMinigame)
+        {
+            estaAndando = false; // Para para jogar
             if (painelMinigame != null)
             {
                 painelMinigame.ConfigurarPainel(pontoAtual.imagemDoPainel, pontoAtual.textoExplicativo, pontoAtual.nomeCenaMinigame);
@@ -101,17 +120,30 @@ public class AveNavegadora : MonoBehaviour
         }
         else if (pontoAtual.eBifurcacao)
         {
-            estaAndando = false;
+            estaAndando = false; // Para para escolher
             if(popupDecisao != null) popupDecisao.SetActive(true);
         }
         else if (pontoAtual.proximoPonto != null)
         {
-            MoverPara(pontoAtual.proximoPonto);
+            MoverPara(pontoAtual.proximoPonto); // Continua andando
         }
         else
         {
             estaAndando = false; 
         }
+    }
+
+    public void BotaoReiniciarJogo()
+    {
+        Time.timeScale = 1f;
+        PlayerPrefs.DeleteAll();
+
+        if (AudioManager.instance != null)
+        {
+            Destroy(AudioManager.instance.gameObject);
+        }
+
+        SceneManager.LoadScene(nomeCenaMenu);
     }
 
     void MoverPara(PontoMapa alvo)
