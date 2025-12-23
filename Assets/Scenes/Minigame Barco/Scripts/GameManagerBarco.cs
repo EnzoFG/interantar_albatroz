@@ -23,7 +23,7 @@ public class GameManagerBarco : MonoBehaviour
 
     [Header("Configuração de Saída e Energia")]
     [Tooltip("Nome da cena para onde ir ao clicar em Continuar")]
-    public string nomeDaCenaDeSaida = "ViagemAlbatroz"; // <--- Ajustado
+    public string nomeDaCenaDeSaida = "ViagemAlbatroz";
     
     [Tooltip("Quantos peixes são necessários para ganhar 1 de energia")]
     public int peixesParaUmaEnergia = 3; 
@@ -67,7 +67,6 @@ public class GameManagerBarco : MonoBehaviour
             musicAudioSource.Play();
         }
 
-        // Teste de conexão (padrão dos outros minigames)
         if (PlayerPrefs.HasKey("EnergiaPlayer"))
         {
             Debug.Log("BARCO START: Energia recebida: " + PlayerPrefs.GetInt("EnergiaPlayer"));
@@ -78,7 +77,6 @@ public class GameManagerBarco : MonoBehaviour
     {
         if (!jogoRodando) return;
 
-        // Timer
         if (tempoRestante > 0)
         {
             tempoRestante -= Time.deltaTime;
@@ -91,7 +89,6 @@ public class GameManagerBarco : MonoBehaviour
             TerminarJogo();
         }
 
-        // Spawner
         timerSpawner -= Time.deltaTime;
         if (timerSpawner <= 0)
         {
@@ -119,36 +116,27 @@ public class GameManagerBarco : MonoBehaviour
         Time.timeScale = 0f; 
         if(musicAudioSource) musicAudioSource.Stop(); 
 
-        // 1. Calcula a Energia Ganha
         int energiaGanha = 0;
         if (peixesParaUmaEnergia > 0)
         {
             energiaGanha = peixesPegos / peixesParaUmaEnergia;
         }
 
-        // --- SISTEMA DE INTEGRAÇÃO DE ENERGIA (NOVO) ---
         
-        // 2. Lê a energia anterior (Usa 5 se der erro de leitura)
         int energiaAnterior = PlayerPrefs.GetInt("EnergiaPlayer", 5);
         
-        // 3. Soma
         int energiaFinal = energiaAnterior + energiaGanha;
         
-        // 4. Limita (0 a 10)
         if (energiaFinal > 10) energiaFinal = 10;
         if (energiaFinal < 0) energiaFinal = 0;
 
-        // 5. Salva na chave correta
         PlayerPrefs.SetInt("EnergiaPlayer", energiaFinal);
         PlayerPrefs.Save();
         
         Debug.Log($"BARCO FIM: Tinha {energiaAnterior}. Ganhou {energiaGanha}. Ficou com {energiaFinal}.");
-        // -----------------------------------------------
 
-        // Atualiza UI
         textoResultadoPeixes.text = $"Peixes Coletados: {peixesPegos}";
         
-        // Formata o texto para ficar bonito (ex: "+1")
         if (energiaGanha > 0) textoResultadoEnergia.text = $"Energia Ganha: +{energiaGanha}";
         else textoResultadoEnergia.text = $"Energia Ganha: {energiaGanha}";
 

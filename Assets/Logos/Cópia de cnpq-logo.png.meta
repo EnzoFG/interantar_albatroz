@@ -1,0 +1,1911 @@
+fileFormatVersion: 2
+guid: d43fc8f0cdf52b8479dd51810f046677
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7768577151118269122
+    second: "C\xF3pia de cnpq-logo_0"
+  - first:
+      213: 6873020276721266793
+    second: "C\xF3pia de cnpq-logo_1"
+  - first:
+      213: 1520007525621311662
+    second: "C\xF3pia de cnpq-logo_2"
+  - first:
+      213: 7619040968152466140
+    second: "C\xF3pia de cnpq-logo_3"
+  - first:
+      213: -8967520730318112169
+    second: "C\xF3pia de cnpq-logo_4"
+  - first:
+      213: 3668541955839420838
+    second: "C\xF3pia de cnpq-logo_5"
+  - first:
+      213: -2440081505415089575
+    second: "C\xF3pia de cnpq-logo_6"
+  - first:
+      213: 5903779590006438940
+    second: "C\xF3pia de cnpq-logo_7"
+  - first:
+      213: -9192930146130872976
+    second: "C\xF3pia de cnpq-logo_8"
+  - first:
+      213: 8114450859157953292
+    second: "C\xF3pia de cnpq-logo_9"
+  - first:
+      213: -7639765722129567237
+    second: "C\xF3pia de cnpq-logo_10"
+  - first:
+      213: 8586558282276454063
+    second: "C\xF3pia de cnpq-logo_11"
+  - first:
+      213: 7701407502548807769
+    second: "C\xF3pia de cnpq-logo_12"
+  - first:
+      213: -6549393715432008418
+    second: "C\xF3pia de cnpq-logo_13"
+  - first:
+      213: 8882048855236058901
+    second: "C\xF3pia de cnpq-logo_14"
+  - first:
+      213: -6641596243386322915
+    second: "C\xF3pia de cnpq-logo_15"
+  - first:
+      213: 4864804619977294212
+    second: "C\xF3pia de cnpq-logo_16"
+  - first:
+      213: 2117301955207991198
+    second: "C\xF3pia de cnpq-logo_17"
+  - first:
+      213: -8862085684138896058
+    second: "C\xF3pia de cnpq-logo_18"
+  - first:
+      213: -7364646823002129408
+    second: "C\xF3pia de cnpq-logo_19"
+  - first:
+      213: 1036417605159791929
+    second: "C\xF3pia de cnpq-logo_20"
+  - first:
+      213: -5909925646904611656
+    second: "C\xF3pia de cnpq-logo_21"
+  - first:
+      213: 7716736486477920958
+    second: "C\xF3pia de cnpq-logo_22"
+  - first:
+      213: 3719011570888769144
+    second: "C\xF3pia de cnpq-logo_23"
+  - first:
+      213: -627043721084694799
+    second: "C\xF3pia de cnpq-logo_24"
+  - first:
+      213: 7566119710001375743
+    second: "C\xF3pia de cnpq-logo_25"
+  - first:
+      213: 6148887367385657522
+    second: "C\xF3pia de cnpq-logo_26"
+  - first:
+      213: 6264056488628046973
+    second: "C\xF3pia de cnpq-logo_27"
+  - first:
+      213: -4961461121920943938
+    second: "C\xF3pia de cnpq-logo_28"
+  - first:
+      213: -310507729936855638
+    second: "C\xF3pia de cnpq-logo_29"
+  - first:
+      213: -1950296403262596566
+    second: "C\xF3pia de cnpq-logo_30"
+  - first:
+      213: -660308290632501289
+    second: "C\xF3pia de cnpq-logo_31"
+  - first:
+      213: -3053107755666710756
+    second: "C\xF3pia de cnpq-logo_32"
+  - first:
+      213: -8337671860691491673
+    second: "C\xF3pia de cnpq-logo_33"
+  - first:
+      213: 336749310053393266
+    second: "C\xF3pia de cnpq-logo_34"
+  - first:
+      213: -918398070515684584
+    second: "C\xF3pia de cnpq-logo_35"
+  - first:
+      213: 6326661164103201616
+    second: "C\xF3pia de cnpq-logo_36"
+  - first:
+      213: -8889102463159591384
+    second: "C\xF3pia de cnpq-logo_37"
+  - first:
+      213: -1571269482677655370
+    second: "C\xF3pia de cnpq-logo_38"
+  - first:
+      213: 7089946378896305385
+    second: "C\xF3pia de cnpq-logo_39"
+  - first:
+      213: -5918962793485311277
+    second: "C\xF3pia de cnpq-logo_40"
+  - first:
+      213: 7946886037804823890
+    second: "C\xF3pia de cnpq-logo_41"
+  - first:
+      213: -6437729313659911629
+    second: "C\xF3pia de cnpq-logo_42"
+  - first:
+      213: -362849020218599291
+    second: "C\xF3pia de cnpq-logo_43"
+  - first:
+      213: 7003204255656239594
+    second: "C\xF3pia de cnpq-logo_44"
+  - first:
+      213: 1819361418588082976
+    second: "C\xF3pia de cnpq-logo_45"
+  - first:
+      213: 8375551827212494145
+    second: "C\xF3pia de cnpq-logo_46"
+  - first:
+      213: -2728091055176432765
+    second: "C\xF3pia de cnpq-logo_47"
+  - first:
+      213: 7523821521952448417
+    second: "C\xF3pia de cnpq-logo_48"
+  - first:
+      213: -4836681844297862354
+    second: "C\xF3pia de cnpq-logo_49"
+  - first:
+      213: -5847558365191617470
+    second: "C\xF3pia de cnpq-logo_50"
+  - first:
+      213: 6821336188394724867
+    second: "C\xF3pia de cnpq-logo_51"
+  - first:
+      213: 7923526324621757632
+    second: "C\xF3pia de cnpq-logo_52"
+  - first:
+      213: -8934401326452672404
+    second: "C\xF3pia de cnpq-logo_53"
+  - first:
+      213: -9112329672203509177
+    second: "C\xF3pia de cnpq-logo_54"
+  - first:
+      213: 5327604206724449703
+    second: "C\xF3pia de cnpq-logo_55"
+  - first:
+      213: -1995314306726880789
+    second: "C\xF3pia de cnpq-logo_56"
+  - first:
+      213: 968510559387096134
+    second: "C\xF3pia de cnpq-logo_57"
+  - first:
+      213: -5102226965187018332
+    second: "C\xF3pia de cnpq-logo_58"
+  - first:
+      213: -7785833186983083100
+    second: "C\xF3pia de cnpq-logo_59"
+  - first:
+      213: 4425556588945638068
+    second: "C\xF3pia de cnpq-logo_60"
+  - first:
+      213: 4616188537951478890
+    second: "C\xF3pia de cnpq-logo_61"
+  - first:
+      213: -3610569513270192396
+    second: "C\xF3pia de cnpq-logo_62"
+  - first:
+      213: 4354007185489269745
+    second: "C\xF3pia de cnpq-logo_63"
+  - first:
+      213: -2968892592697229885
+    second: "C\xF3pia de cnpq-logo_64"
+  - first:
+      213: -837882376797948193
+    second: "C\xF3pia de cnpq-logo_65"
+  - first:
+      213: -3770537460094728589
+    second: "C\xF3pia de cnpq-logo_66"
+  - first:
+      213: 3443090119909422811
+    second: "C\xF3pia de cnpq-logo_67"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 637
+        width: 1494
+        height: 1499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e352161ad38703490800000000000000
+      internalID: -7768577151118269122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_1"
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 635
+        width: 975
+        height: 1291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9603700e68fd16f50800000000000000
+      internalID: 6873020276721266793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_2"
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 940
+        width: 869
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea8249c8ac6281510800000000000000
+      internalID: 1520007525621311662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_3"
+      rect:
+        serializedVersion: 2
+        x: 2446
+        y: 959
+        width: 1005
+        height: 834
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd240e3a4654cb960800000000000000
+      internalID: 7619040968152466140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_4"
+      rect:
+        serializedVersion: 2
+        x: 3412
+        y: 959
+        width: 861
+        height: 834
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75aff616867fc8380800000000000000
+      internalID: -8967520730318112169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_5"
+      rect:
+        serializedVersion: 2
+        x: 4270
+        y: 734
+        width: 726
+        height: 832
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9ec69d87749e230800000000000000
+      internalID: 3668541955839420838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_6"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 350
+        width: 176
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952bbb68cc6132ed0800000000000000
+      internalID: -2440081505415089575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_7"
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 355
+        width: 77
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1cf88ee1407ee150800000000000000
+      internalID: 5903779590006438940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_8"
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 355
+        width: 146
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 075b3e20db62c6080800000000000000
+      internalID: -9192930146130872976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_9"
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 355
+        width: 190
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0b197f60125c9070800000000000000
+      internalID: 8114450859157953292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_10"
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 505
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1f24d8d891af590800000000000000
+      internalID: -7639765722129567237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_11"
+      rect:
+        serializedVersion: 2
+        x: 2424
+        y: 355
+        width: 77
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faeb642a345992770800000000000000
+      internalID: 8586558282276454063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_12"
+      rect:
+        serializedVersion: 2
+        x: 2566
+        y: 351
+        width: 161
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95033fbd155e0ea60800000000000000
+      internalID: 7701407502548807769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_13"
+      rect:
+        serializedVersion: 2
+        x: 2931
+        y: 355
+        width: 180
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15df71bd11eb15a0800000000000000
+      internalID: -6549393715432008418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_14"
+      rect:
+        serializedVersion: 2
+        x: 3967
+        y: 355
+        width: 77
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f920eef50634b70800000000000000
+      internalID: 8882048855236058901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_15"
+      rect:
+        serializedVersion: 2
+        x: 4209
+        y: 505
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10b363c76f44d3a0800000000000000
+      internalID: -6641596243386322915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_16"
+      rect:
+        serializedVersion: 2
+        x: 4776
+        y: 353
+        width: 85
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4810d6be602438340800000000000000
+      internalID: 4864804619977294212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_17"
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 351
+        width: 145
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f896a09ea226d10800000000000000
+      internalID: 2117301955207991198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_18"
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 355
+        width: 146
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64593db060c830580800000000000000
+      internalID: -8862085684138896058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_19"
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 351
+        width: 135
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00cbfbaebb48bc990800000000000000
+      internalID: -7364646823002129408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_20"
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 351
+        width: 135
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93da28a1258126e00800000000000000
+      internalID: 1036417605159791929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_21"
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 351
+        width: 145
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bca74fafe9bbfda0800000000000000
+      internalID: -5909925646904611656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_22"
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 351
+        width: 138
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebaffcd03fa571b60800000000000000
+      internalID: 7716736486477920958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_23"
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 351
+        width: 135
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87e746ec1559c9330800000000000000
+      internalID: 3719011570888769144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_24"
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 355
+        width: 67
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe8b12de0b4c47f0800000000000000
+      internalID: -627043721084694799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_25"
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 351
+        width: 145
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff9a6ba0ac1400960800000000000000
+      internalID: 7566119710001375743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_26"
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 355
+        width: 146
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b0b8e08b7c355550800000000000000
+      internalID: 6148887367385657522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_27"
+      rect:
+        serializedVersion: 2
+        x: 2279
+        y: 351
+        width: 136
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7cc7a120366ee650800000000000000
+      internalID: 6264056488628046973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_28"
+      rect:
+        serializedVersion: 2
+        x: 2718
+        y: 351
+        width: 135
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb8bdf48569552bb0800000000000000
+      internalID: -4961461121920943938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_29"
+      rect:
+        serializedVersion: 2
+        x: 3112
+        y: 351
+        width: 136
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aadc9116ddad0bbf0800000000000000
+      internalID: -310507729936855638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_30"
+      rect:
+        serializedVersion: 2
+        x: 3251
+        y: 351
+        width: 135
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a9fcc11c72fe4e0800000000000000
+      internalID: -1950296403262596566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_31"
+      rect:
+        serializedVersion: 2
+        x: 3394
+        y: 351
+        width: 135
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d7ba9eab1d16d6f0800000000000000
+      internalID: -660308290632501289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_32"
+      rect:
+        serializedVersion: 2
+        x: 3533
+        y: 355
+        width: 146
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1fde7a1cae21a5d0800000000000000
+      internalID: -3053107755666710756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_33"
+      rect:
+        serializedVersion: 2
+        x: 3693
+        y: 355
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4a6b91e93aa4c80800000000000000
+      internalID: -8337671860691491673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_34"
+      rect:
+        serializedVersion: 2
+        x: 3815
+        y: 351
+        width: 145
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 273271c96bf5ca400800000000000000
+      internalID: 336749310053393266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_35"
+      rect:
+        serializedVersion: 2
+        x: 4051
+        y: 355
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81b228c12d13143f0800000000000000
+      internalID: -918398070515684584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_36"
+      rect:
+        serializedVersion: 2
+        x: 4178
+        y: 355
+        width: 67
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05371a40fc0dcc750800000000000000
+      internalID: 6326661164103201616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_37"
+      rect:
+        serializedVersion: 2
+        x: 4246
+        y: 355
+        width: 218
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e925ff76093a480800000000000000
+      internalID: -8889102463159591384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_38"
+      rect:
+        serializedVersion: 2
+        x: 4474
+        y: 351
+        width: 135
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8269efabab13ae0800000000000000
+      internalID: -1571269482677655370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_39"
+      rect:
+        serializedVersion: 2
+        x: 4613
+        y: 355
+        width: 146
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec6eaedaac846260800000000000000
+      internalID: 7089946378896305385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_40"
+      rect:
+        serializedVersion: 2
+        x: 4857
+        y: 351
+        width: 143
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d2ed8703be9bdda0800000000000000
+      internalID: -5918962793485311277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_41"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 48
+        width: 176
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2553ed93fb2094e60800000000000000
+      internalID: 7946886037804823890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_42"
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 204
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3328e2b3c4798a6a0800000000000000
+      internalID: -6437729313659911629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_43"
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 52
+        width: 84
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58895c21db6e6faf0800000000000000
+      internalID: -362849020218599291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_44"
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 206
+        width: 74
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae1e4eb7a21603160800000000000000
+      internalID: 7003204255656239594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_45"
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 54
+        width: 99
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0235ef0229baf3910800000000000000
+      internalID: 1819361418588082976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_46"
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 204
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145efd2e200fb3470800000000000000
+      internalID: 8375551827212494145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_47"
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 54
+        width: 158
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383c94da3afd32ad0800000000000000
+      internalID: -2728091055176432765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_48"
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 54
+        width: 77
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af1a61bfcbf96860800000000000000
+      internalID: 7523821521952448417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_49"
+      rect:
+        serializedVersion: 2
+        x: 2527
+        y: 206
+        width: 73
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e237b0b0d77a0ecb0800000000000000
+      internalID: -4836681844297862354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_50"
+      rect:
+        serializedVersion: 2
+        x: 2791
+        y: 204
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 244c36706ac49dea0800000000000000
+      internalID: -5847558365191617470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_51"
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 54
+        width: 67
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ed8c25f114aae50800000000000000
+      internalID: 6821336188394724867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_52"
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 50
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc498b263506fd60800000000000000
+      internalID: 7923526324621757632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_53"
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 54
+        width: 146
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6872008451a20480800000000000000
+      internalID: -8934401326452672404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_54"
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 54
+        width: 68
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 742ee0c31708a8180800000000000000
+      internalID: -9112329672203509177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_55"
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 54
+        width: 67
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a500b59cc37fe940800000000000000
+      internalID: 5327604206724449703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_56"
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 50
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be91a4ca5383f44e0800000000000000
+      internalID: -1995314306726880789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_57"
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 50
+        width: 145
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6449b7de837d07d00800000000000000
+      internalID: 968510559387096134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_58"
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 50
+        width: 136
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a1cb90ab9f3139b0800000000000000
+      internalID: -5102226965187018332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_59"
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 50
+        width: 136
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a30d61b7f923f390800000000000000
+      internalID: -7785833186983083100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_60"
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 50
+        width: 135
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b28e71254cba6d30800000000000000
+      internalID: 4425556588945638068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_61"
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 54
+        width: 145
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a64e3d4840fff0040800000000000000
+      internalID: 4616188537951478890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_62"
+      rect:
+        serializedVersion: 2
+        x: 2228
+        y: 50
+        width: 145
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f6dca4482ea4edc0800000000000000
+      internalID: -3610569513270192396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_63"
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 50
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f31698777a8c6c30800000000000000
+      internalID: 4354007185489269745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_64"
+      rect:
+        serializedVersion: 2
+        x: 2597
+        y: 0
+        width: 161
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd3ef3baef5cc6d0800000000000000
+      internalID: -2968892592697229885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_65"
+      rect:
+        serializedVersion: 2
+        x: 2758
+        y: 54
+        width: 68
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd6f567ea6e3f54f0800000000000000
+      internalID: -837882376797948193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_66"
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 50
+        width: 134
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37600ce382c5cabc0800000000000000
+      internalID: -3770537460094728589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de cnpq-logo_67"
+      rect:
+        serializedVersion: 2
+        x: 2974
+        y: 50
+        width: 145
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd6bbd6c83058cf20800000000000000
+      internalID: 3443090119909422811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "C\xF3pia de cnpq-logo_0": -7768577151118269122
+      "C\xF3pia de cnpq-logo_1": 6873020276721266793
+      "C\xF3pia de cnpq-logo_10": -7639765722129567237
+      "C\xF3pia de cnpq-logo_11": 8586558282276454063
+      "C\xF3pia de cnpq-logo_12": 7701407502548807769
+      "C\xF3pia de cnpq-logo_13": -6549393715432008418
+      "C\xF3pia de cnpq-logo_14": 8882048855236058901
+      "C\xF3pia de cnpq-logo_15": -6641596243386322915
+      "C\xF3pia de cnpq-logo_16": 4864804619977294212
+      "C\xF3pia de cnpq-logo_17": 2117301955207991198
+      "C\xF3pia de cnpq-logo_18": -8862085684138896058
+      "C\xF3pia de cnpq-logo_19": -7364646823002129408
+      "C\xF3pia de cnpq-logo_2": 1520007525621311662
+      "C\xF3pia de cnpq-logo_20": 1036417605159791929
+      "C\xF3pia de cnpq-logo_21": -5909925646904611656
+      "C\xF3pia de cnpq-logo_22": 7716736486477920958
+      "C\xF3pia de cnpq-logo_23": 3719011570888769144
+      "C\xF3pia de cnpq-logo_24": -627043721084694799
+      "C\xF3pia de cnpq-logo_25": 7566119710001375743
+      "C\xF3pia de cnpq-logo_26": 6148887367385657522
+      "C\xF3pia de cnpq-logo_27": 6264056488628046973
+      "C\xF3pia de cnpq-logo_28": -4961461121920943938
+      "C\xF3pia de cnpq-logo_29": -310507729936855638
+      "C\xF3pia de cnpq-logo_3": 7619040968152466140
+      "C\xF3pia de cnpq-logo_30": -1950296403262596566
+      "C\xF3pia de cnpq-logo_31": -660308290632501289
+      "C\xF3pia de cnpq-logo_32": -3053107755666710756
+      "C\xF3pia de cnpq-logo_33": -8337671860691491673
+      "C\xF3pia de cnpq-logo_34": 336749310053393266
+      "C\xF3pia de cnpq-logo_35": -918398070515684584
+      "C\xF3pia de cnpq-logo_36": 6326661164103201616
+      "C\xF3pia de cnpq-logo_37": -8889102463159591384
+      "C\xF3pia de cnpq-logo_38": -1571269482677655370
+      "C\xF3pia de cnpq-logo_39": 7089946378896305385
+      "C\xF3pia de cnpq-logo_4": -8967520730318112169
+      "C\xF3pia de cnpq-logo_40": -5918962793485311277
+      "C\xF3pia de cnpq-logo_41": 7946886037804823890
+      "C\xF3pia de cnpq-logo_42": -6437729313659911629
+      "C\xF3pia de cnpq-logo_43": -362849020218599291
+      "C\xF3pia de cnpq-logo_44": 7003204255656239594
+      "C\xF3pia de cnpq-logo_45": 1819361418588082976
+      "C\xF3pia de cnpq-logo_46": 8375551827212494145
+      "C\xF3pia de cnpq-logo_47": -2728091055176432765
+      "C\xF3pia de cnpq-logo_48": 7523821521952448417
+      "C\xF3pia de cnpq-logo_49": -4836681844297862354
+      "C\xF3pia de cnpq-logo_5": 3668541955839420838
+      "C\xF3pia de cnpq-logo_50": -5847558365191617470
+      "C\xF3pia de cnpq-logo_51": 6821336188394724867
+      "C\xF3pia de cnpq-logo_52": 7923526324621757632
+      "C\xF3pia de cnpq-logo_53": -8934401326452672404
+      "C\xF3pia de cnpq-logo_54": -9112329672203509177
+      "C\xF3pia de cnpq-logo_55": 5327604206724449703
+      "C\xF3pia de cnpq-logo_56": -1995314306726880789
+      "C\xF3pia de cnpq-logo_57": 968510559387096134
+      "C\xF3pia de cnpq-logo_58": -5102226965187018332
+      "C\xF3pia de cnpq-logo_59": -7785833186983083100
+      "C\xF3pia de cnpq-logo_6": -2440081505415089575
+      "C\xF3pia de cnpq-logo_60": 4425556588945638068
+      "C\xF3pia de cnpq-logo_61": 4616188537951478890
+      "C\xF3pia de cnpq-logo_62": -3610569513270192396
+      "C\xF3pia de cnpq-logo_63": 4354007185489269745
+      "C\xF3pia de cnpq-logo_64": -2968892592697229885
+      "C\xF3pia de cnpq-logo_65": -837882376797948193
+      "C\xF3pia de cnpq-logo_66": -3770537460094728589
+      "C\xF3pia de cnpq-logo_67": 3443090119909422811
+      "C\xF3pia de cnpq-logo_7": 5903779590006438940
+      "C\xF3pia de cnpq-logo_8": -9192930146130872976
+      "C\xF3pia de cnpq-logo_9": 8114450859157953292
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

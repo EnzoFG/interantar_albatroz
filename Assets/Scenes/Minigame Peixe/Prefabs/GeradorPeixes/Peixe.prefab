@@ -178,4 +178,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d559dba2a44fe84693801a821eb9559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovimentoPeixe
-  velocidade: 4
+  velocidade: 10

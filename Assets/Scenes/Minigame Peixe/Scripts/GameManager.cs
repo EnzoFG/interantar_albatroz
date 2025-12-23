@@ -6,131 +6,157 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    [Header("Configuração")]
+    [Header("Configuração do Minigame")]
     public float tempoDeJogo = 45f;
     public string nomeCenaPrincipal = "ViagemAlbatroz"; 
-    
-    // Variável interna
     private bool jogoAcabou = false;
-    // Propriedade pública para o pássaro ler
-    public bool JogoAcabou { get { return jogoAcabou; } }
+    private bool jogoPausado = false;
 
     [Header("Pontuação")]
     public int peixesColetados = 0;
 
-    [Header("UI")]
-    public TextMeshProUGUI textoContadorPeixes; 
+    [Header("Referências de UI - HUD")]
+    public TextMeshProUGUI textoContadorPeixes;
     public TextMeshProUGUI textoTimer;
+
+    [Header("Referências de UI - Fim de Jogo")]
     public GameObject painelFimDeJogo;
     public TextMeshProUGUI textoPeixesFinais;
-    public TextMeshProUGUI textoEnergiaGanha; // Onde mostra o resultado da energia
+    public TextMeshProUGUI textoEnergiaGanha;
+
+    [Header("Referências de UI - Menu Pausa")]
+    public GameObject painelMenuPausa;
 
     [Header("Sons")]
     public AudioClip somColetaPeixe;
     public AudioClip somFimDeJogo;
+    public AudioClip somClickBotao;
     private AudioSource audioSource;
 
-    void Awake() 
-    { 
-        if (instance == null) instance = this; 
-        else Destroy(gameObject); 
+    public bool JogoAcabou { get { return jogoAcabou; } }
+
+    void Awake()
+    {
+        if (instance == null) instance = this;
+        else Destroy(gameObject);
     }
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        if(painelFimDeJogo) painelFimDeJogo.SetActive(false);
         
-        AtualizarUI(); 
-
-        // Teste de conexão
-        if (PlayerPrefs.HasKey("EnergiaPlayer"))
-        {
-            int energiaLida = PlayerPrefs.GetInt("EnergiaPlayer");
-            Debug.Log("CONEXÃO OK: O Minigame recebeu que o jogador tem " + energiaLida + " de energia.");
-        }
-        else
-        {
-            Debug.LogWarning("AVISO: O Minigame não encontrou a chave 'EnergiaPlayer'. Usando valor padrão.");
-        }
+        if(painelFimDeJogo) painelFimDeJogo.SetActive(false);
+        if(painelMenuPausa) painelMenuPausa.SetActive(false);
+        
+        Time.timeScale = 1f; 
+        AtualizarUI();
     }
 
     void Update()
     {
-        if (jogoAcabou)
+        if (jogoAcabou) return;
+
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (Input.GetMouseButtonDown(0)) 
-            {
-                SceneManager.LoadScene(nomeCenaPrincipal);
-            }
-            return;
+            if (jogoPausado) FecharMenuPausa();
+            else AbrirMenuPausa();
         }
 
-        tempoDeJogo -= Time.deltaTime;
-        if(textoTimer) textoTimer.SetText("Tempo: " + tempoDeJogo.ToString("F0"));
-
-        if (tempoDeJogo <= 0) 
+        if (!jogoPausado)
         {
-            FinalizarJogo();
+            tempoDeJogo -= Time.deltaTime;
+            if(textoTimer) textoTimer.SetText("Tempo: " + tempoDeJogo.ToString("F0"));
+
+            if (tempoDeJogo <= 0)
+            {
+                FinalizarJogo();
+            }
         }
     }
 
     public void AdicionarPeixe()
     {
-        if (!jogoAcabou) 
-        {
-            peixesColetados++;
-            TocarSomColeta();
-            AtualizarUI();
-        }
+        if (jogoAcabou) return;
+        peixesColetados++;
+        if (somColetaPeixe != null) audioSource.PlayOneShot(somColetaPeixe);
+        AtualizarUI();
     }
 
     private void FinalizarJogo()
     {
         jogoAcabou = true;
+        Time.timeScale = 0f; 
         
         if(painelFimDeJogo) painelFimDeJogo.SetActive(true);
-        if (somFimDeJogo) audioSource.PlayOneShot(somFimDeJogo);
+        if (somFimDeJogo != null) audioSource.PlayOneShot(somFimDeJogo);
 
-        // --- CÁLCULO DA ENERGIA ---
-        int energiaGanha = 0;
-        if (peixesColetados >= 8) energiaGanha = 2;
-        else if (peixesColetados >= 4) energiaGanha = 1;
-
-        int energiaAnterior = PlayerPrefs.GetInt("EnergiaPlayer", 5);
-        int energiaFinal = energiaAnterior + energiaGanha;
+        int ganho = CalcularEnergia();
         
-        if (energiaFinal > 10) energiaFinal = 10;
-        if (energiaFinal < 0) energiaFinal = 0;
+        int energiaAntiga = PlayerPrefs.GetInt("EnergiaPlayer", 5);
         
-        PlayerPrefs.SetInt("EnergiaPlayer", energiaFinal);
+        int energiaNova = Mathf.Clamp(energiaAntiga + ganho, 0, 10);
+        
+        PlayerPrefs.SetInt("EnergiaPlayer", energiaNova);
         PlayerPrefs.Save();
 
-        Debug.Log($"RESULTADO: Tinha {energiaAnterior} + Ganhou {energiaGanha} = Ficou com {energiaFinal}");
-
-        // --- ATUALIZAÇÃO DA UI (CORRIGIDA) ---
-        if(textoPeixesFinais) textoPeixesFinais.text = "Peixes Coletados: " + peixesColetados;
+        if(textoPeixesFinais) textoPeixesFinais.SetText("Peixes Coletados: " + peixesColetados);
+        if(textoEnergiaGanha) textoEnergiaGanha.SetText("Energia Ganha: " + ganho);
         
-        if (textoEnergiaGanha)
-        {
-            // Agora mostramos o texto explicativo junto com o número
-            if (energiaGanha > 0)
-                textoEnergiaGanha.text = "Energia Ganha: " + energiaGanha;
-            else
-                textoEnergiaGanha.text = "Energia Ganha: " + energiaGanha;
-        }
+        Debug.Log($"Jogo Finalizado! Antiga: {energiaAntiga} | Ganhou: {ganho} | Nova Total: {energiaNova}");
     }
 
-    private void TocarSomColeta()
+    private int CalcularEnergia()
     {
-        if (somColetaPeixe != null) audioSource.PlayOneShot(somColetaPeixe);
+        if (peixesColetados >= 9) return 2;
+        if (peixesColetados >= 4) return 1;
+        return 0;
+    }
+
+    public void VoltarParaCenaPrincipal()
+    {
+        TocarSomClick();
+        Time.timeScale = 1f; 
+        SceneManager.LoadScene(nomeCenaPrincipal);
+    }
+
+    public void AbrirMenuPausa()
+    {
+        if (jogoAcabou) return;
+        TocarSomClick();
+        jogoPausado = true;
+        Time.timeScale = 0f;
+        if(painelMenuPausa) painelMenuPausa.SetActive(true);
+    }
+
+    public void FecharMenuPausa()
+    {
+        TocarSomClick();
+        jogoPausado = false;
+        Time.timeScale = 1f;
+        if(painelMenuPausa) painelMenuPausa.SetActive(false);
+    }
+
+    public void MudarVolume(float volume)
+    {
+        AudioListener.volume = volume;
+    }
+
+    public void SairDoJogo()
+    {
+        TocarSomClick();
+        Application.Quit();
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+    }
+
+    private void TocarSomClick()
+    {
+        if (somClickBotao != null && audioSource != null) audioSource.PlayOneShot(somClickBotao);
     }
 
     private void AtualizarUI()
     {
-        if (textoContadorPeixes != null) 
-        {
-            textoContadorPeixes.text = "Peixes: " + peixesColetados;
-        }
+        if (textoContadorPeixes != null) textoContadorPeixes.SetText("Peixes: " + peixesColetados);
     }
 }

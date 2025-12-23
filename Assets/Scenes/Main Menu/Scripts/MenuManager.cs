@@ -12,7 +12,6 @@ public class MenuManager : MonoBehaviour
 
     [Header("Áudio")]
     public AudioMixer gameMixer;
-    // REMOVIDO: public AudioSource somDeCliqueSource; -> Não precisamos mais disso aqui
 
     [Header("UI Elementos")]
     public Slider volumeSlider;
@@ -35,13 +34,12 @@ public class MenuManager : MonoBehaviour
     {
         TocarSomDeClique(); 
         
-        // Paramos a música do menu antes de trocar de cena
         if (AudioManager.instance != null && AudioManager.instance.musicaFundoSource != null)
         {
             AudioManager.instance.musicaFundoSource.Stop();
         }
 
-        SceneManager.LoadScene("Mapa Mundi");
+        SceneManager.LoadScene("Cutscene Inicial");
     }
 
     public void BotaoOpcoes_Click()
@@ -106,8 +104,6 @@ public class MenuManager : MonoBehaviour
 
     private void TocarSomDeClique()
     {
-        // AQUI ESTÁ A CORREÇÃO:
-        // Em vez de usar um AudioSource local, chamamos o AudioManager global.
         if (AudioManager.instance != null)
         {
             AudioManager.instance.PlayClickSound();

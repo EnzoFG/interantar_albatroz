@@ -32,16 +32,12 @@ public class AveNavegadora : MonoBehaviour
 
     void Start()
     {
-        // --- CORREÇÃO 1: GARANTIA DE TEMPO ---
-        // Garante que o jogo não esteja pausado ao voltar de um minigame
         Time.timeScale = 1f;
 
-        // Garante que painéis comecem fechados
         if (painelVitoria != null) painelVitoria.SetActive(false);
         if (!pontoAtual.eBifurcacao && popupDecisao != null) popupDecisao.SetActive(false);
         if (painelMinigame != null) painelMinigame.gameObject.SetActive(false);
 
-        // --- CARREGAMENTO DO SAVE ---
         string nomeUltimoPonto = PlayerPrefs.GetString("UltimoPontoMapa", "");
         if (!string.IsNullOrEmpty(nomeUltimoPonto))
         {
@@ -53,24 +49,17 @@ public class AveNavegadora : MonoBehaviour
         {
             transform.position = pontoAtual.transform.position;
             
-            // --- CORREÇÃO 2: LÓGICA DE MOVIMENTO NO INÍCIO ---
             
             if (pontoAtual.ePontoFinal)
             {
-                // Se nasceu no final, Vitória
                 if (painelVitoria != null) painelVitoria.SetActive(true);
             }
             else if (pontoAtual.eBifurcacao)
             {
-                // Se nasceu na bifurcação, espera escolha
                 if(popupDecisao != null) popupDecisao.SetActive(true);
             }
             else if (pontoAtual.proximoPonto != null)
             {
-                // AQUI ESTAVA O PROBLEMA:
-                // Removemos a verificação "!pontoAtual.eMinigame".
-                // Se carregou a cena e tem um próximo ponto, ela DEVE andar,
-                // mesmo que o ponto atual seja de minigame (pois assume-se que já jogou).
                 MoverPara(pontoAtual.proximoPonto);
             }
         }
@@ -102,8 +91,6 @@ public class AveNavegadora : MonoBehaviour
         PlayerPrefs.SetString("UltimoPontoMapa", pontoAtual.name);
         PlayerPrefs.Save();
 
-        // --- AQUI MANTEMOS A LÓGICA DE PARAR ---
-        // Quando ela CHEGA andando, aí sim ela para se for minigame.
         
         if (pontoAtual.ePontoFinal)
         {
@@ -112,7 +99,7 @@ public class AveNavegadora : MonoBehaviour
         }
         else if (pontoAtual.eMinigame)
         {
-            estaAndando = false; // Para para jogar
+            estaAndando = false;
             if (painelMinigame != null)
             {
                 painelMinigame.ConfigurarPainel(pontoAtual.imagemDoPainel, pontoAtual.textoExplicativo, pontoAtual.nomeCenaMinigame);
@@ -120,12 +107,12 @@ public class AveNavegadora : MonoBehaviour
         }
         else if (pontoAtual.eBifurcacao)
         {
-            estaAndando = false; // Para para escolher
+            estaAndando = false;
             if(popupDecisao != null) popupDecisao.SetActive(true);
         }
         else if (pontoAtual.proximoPonto != null)
         {
-            MoverPara(pontoAtual.proximoPonto); // Continua andando
+            MoverPara(pontoAtual.proximoPonto);
         }
         else
         {

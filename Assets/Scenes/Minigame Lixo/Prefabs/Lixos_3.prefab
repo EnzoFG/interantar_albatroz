@@ -136,7 +136,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.53, y: 3.27}
+  m_Size: {x: 4, y: 4}
   m_EdgeRadius: 0
 --- !u!114 &8381068789707993702
 MonoBehaviour:
@@ -150,3 +150,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a535cf18ea213a1428c9c0a987eed475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrashItem
+  isIgnored: 0

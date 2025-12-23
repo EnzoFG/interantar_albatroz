@@ -86,7 +86,6 @@ public class GameManagerPesqueiro : MonoBehaviour
     {
         if (!jogoRodando) return;
 
-        // Timer
         if (tempoRestante > 0)
         {
             tempoRestante -= Time.deltaTime;
@@ -99,7 +98,6 @@ public class GameManagerPesqueiro : MonoBehaviour
             TerminarJogoVitoria();
         }
 
-        // Spawner
         timerSpawner -= Time.deltaTime;
         if (timerSpawner <= 0)
         {
@@ -129,7 +127,6 @@ public class GameManagerPesqueiro : MonoBehaviour
         }
     }
 
-    // --- GAME OVER (MORTE) ---
     void GameOverMorteNaRede()
     {
         jogoRodando = false;
@@ -139,12 +136,9 @@ public class GameManagerPesqueiro : MonoBehaviour
 
         Debug.Log("GAME OVER: A ave ficou presa na rede!");
 
-        // Abre o painel de morte. 
-        // O botão deste painel deve chamar a função "BotaoReiniciarTudo()"
         if (painelGameOverRede != null) painelGameOverRede.SetActive(true);
     }
 
-    // --- FIM DE JOGO (VITÓRIA / TEMPO ACABOU) ---
     void TerminarJogoVitoria()
     {
         jogoRodando = false;
@@ -152,11 +146,9 @@ public class GameManagerPesqueiro : MonoBehaviour
         
         if(musicAudioSource != null) musicAudioSource.Stop();
 
-        // 1. Cálculo da Energia Ganha
         int energiaGanha = 0;
         if (peixesParaUmaEnergia > 0) energiaGanha = peixesPegos / peixesParaUmaEnergia;
 
-        // 2. Integração com Mapa (Salvar Energia)
         int energiaAnterior = PlayerPrefs.GetInt("EnergiaPlayer", 5);
         int energiaFinal = energiaAnterior + energiaGanha;
         
@@ -168,47 +160,32 @@ public class GameManagerPesqueiro : MonoBehaviour
         
         Debug.Log($"PESQUEIRO VITORIA: Salvo {energiaFinal} de energia.");
 
-        // Atualiza UI
         if(textoResultadoPeixes != null) textoResultadoPeixes.text = $"Total de Peixes: {peixesPegos}";
-        if(textoResultadoEnergia != null) textoResultadoEnergia.text = $"Parabéns!\nGanhou +{energiaGanha} de Energia.";
+        if(textoResultadoEnergia != null) textoResultadoEnergia.text = $"Energia Ganha: {energiaGanha}";
 
-        // Abre o painel de vitória.
-        // O botão deste painel deve chamar a função "BotaoContinuarParaMapa()"
         if(painelFimDeJogo != null) painelFimDeJogo.SetActive(true);
     }
 
-    // ---------------------------------------------------------------
-    // FUNÇÕES PARA OS BOTÕES (ARRAS-TE PARA O ONCLICK DA UI)
-    // ---------------------------------------------------------------
-
-    // Use esta função no botão "Continuar" do Painel de VITÓRIA
     public void BotaoContinuarParaMapa()
     {
         Time.timeScale = 1f;
-        // Carrega o Mapa Mundi e mantém o progresso salvo
         SceneManager.LoadScene(nomeCenaMapa);
     }
 
-    // Use esta função no botão "Game Over" do Painel de DERROTA (REDE)
     public void BotaoReiniciarTudo()
     {
         Time.timeScale = 1f;
 
-        // 1. APAGA TODO O PROGRESSO (Posição volta pro início, Energia volta pra 5)
         PlayerPrefs.DeleteAll();
         Debug.Log("RESET TOTAL: Progresso apagado.");
 
-        // 2. Destroi o AudioManager para garantir que o som reinicie limpo no Menu
         if (AudioManager.instance != null)
         {
             Destroy(AudioManager.instance.gameObject);
         }
 
-        // 3. Volta para o MENU INICIAL
         SceneManager.LoadScene(nomeCenaMenu);
     }
-
-    // ---------------------------------------------------------------
 
     void AtualizarUI() 
     { 

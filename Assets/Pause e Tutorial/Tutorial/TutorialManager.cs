@@ -1,66 +1,90 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class TutorialManager : MonoBehaviour
 {
     [Header("Conexões Internas")]
     public GameObject painelTutorial;
 
-    [Header("Configuração por Cena")]
+    [Header("Configuração de Sessão")]
+    public string idDoTutorial;
     public bool abrirAoIniciar = true;
 
-    // --- NOVA VARIÁVEL DE CONTROLE ---
-    // Sendo static, ela lembra o valor mesmo mudando de cena.
-    // Começa false. Na primeira vez que mostra, vira true para sempre (nesta sessão).
-    private static bool tutorialJaFoiExibido = false;
+    [Header("Alvos de Pausa (Opcional)")]
+    [Tooltip("Se você quiser pausar objetos específicos sem erro, arraste-os aqui (ex: Ave, Spawners).")]
+    public GameObject[] objetosParaCongelar;
+
+    private static List<string> idsVistosNestaSessao = new List<string>();
 
     IEnumerator Start()
     {
-        painelTutorial.SetActive(false);
+        if (painelTutorial != null)
+            painelTutorial.SetActive(false);
 
-        // A LÓGICA MUDOU AQUI:
-        // Só abre se estiver marcado para abrir E se ainda NÃO foi exibido.
-        if (abrirAoIniciar && !tutorialJaFoiExibido)
+        // Verifica se já viu nesta sessão
+        if (abrirAoIniciar && !idsVistosNestaSessao.Contains(idDoTutorial))
         {
-            yield return new WaitForEndOfFrame();
+            // Pequeno atraso para garantir que tudo carregou
+            yield return new WaitForSecondsRealtime(0.1f);
 
-            // Abre silencioso (false)
             AbrirTutorial(false);
-            
-            // Marca que já mostrou. Agora, se sair e voltar da cena, ele valerá true.
-            tutorialJaFoiExibido = true;
+            idsVistosNestaSessao.Add(idDoTutorial);
         }
     }
 
-    // Função para chamar via Botão (mantém o som)
-    public void AbrirTutorial()
-    {
-        AbrirTutorial(true);
-    }
+    public void AbrirTutorialManual() => AbrirTutorial(true);
 
-    // Função interna com controle de som
     public void AbrirTutorial(bool tocarSom)
     {
-        if (tocarSom && AudioManager.instance != null)
-        {
-            AudioManager.instance.PlayClickSound();
-        }
+        if (painelTutorial == null) return;
 
-        Time.timeScale = 0f;
+        if (tocarSom && AudioManager.instance != null)
+            AudioManager.instance.PlayClickSound();
+
+        // 1. Ativa o painel
         painelTutorial.SetActive(true);
+
+        // 2. PAUSA TUDO (Autoridade)
+        CongelarMundo(true);
     }
 
     public void FecharTutorial()
     {
-        if (AudioManager.instance != null)
-        {
-            AudioManager.instance.PlayClickSound();
-        }
+        if (painelTutorial == null) return;
 
-        Time.timeScale = 1f;
+        if (AudioManager.instance != null)
+            AudioManager.instance.PlayClickSound();
+
+        // 1. DESPAUSA TUDO
+        CongelarMundo(false);
+
+        // 2. Esconde o painel
         painelTutorial.SetActive(false);
     }
-    
-    // Opcional: Se quiser testar o tutorial de novo sem fechar o jogo, 
-    // você pode criar um método para resetar essa variável ou apenas reiniciar a Unity.
+
+    private void CongelarMundo(bool pausar)
+    {
+        // Para o tempo do motor (Física e Animators)
+        Time.timeScale = pausar ? 0f : 1f;
+
+        // Se você arrastou objetos no Inspector (como a Ave), 
+        // este código desliga o script deles para eles pararem o Update()
+        foreach (GameObject obj in objetosParaCongelar)
+        {
+            if (obj == null) continue;
+
+            // Desativa todos os scripts do objeto (exceto o Renderer para ele continuar visível)
+            MonoBehaviour[] scripts = obj.GetComponents<MonoBehaviour>();
+            foreach (var s in scripts)
+            {
+                // Não desativa a si mesmo nem o próprio painel
+                if (s != this) s.enabled = !pausar;
+            }
+
+            // Para a simulação física do Rigidbody
+            Rigidbody2D rb = obj.GetComponent<Rigidbody2D>();
+            if (rb != null) rb.simulated = !pausar;
+        }
+    }
 }

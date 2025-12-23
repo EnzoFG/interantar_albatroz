@@ -32,7 +32,6 @@ public class AvePesqueiro : MonoBehaviour
         {
             if (!voltandoParaCasa)
             {
-                // INDO
                 if (alvoPeixe != null)
                 {
                     MoverPara(alvoPeixe.position);
@@ -43,12 +42,11 @@ public class AvePesqueiro : MonoBehaviour
                 }
                 else
                 {
-                    voltandoParaCasa = true; // Se o peixe sumiu, volta
+                    voltandoParaCasa = true;
                 }
             }
             else
             {
-                // VOLTANDO
                 MoverPara(posicaoInicial);
                 if (Vector2.Distance(transform.position, posicaoInicial) < 0.1f)
                 {
@@ -58,7 +56,6 @@ public class AvePesqueiro : MonoBehaviour
         }
     }
 
-    // Retorna bool para confirmar para o peixe
     public bool DefinirAlvo(Transform peixe)
     {
         if (estaVoando) return false; 
@@ -76,7 +73,6 @@ public class AvePesqueiro : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, destino, velocidadeVoo * Time.deltaTime);
         
-        // Espelhamento do sprite
         if (destino.x < transform.position.x) spriteRenderer.flipX = true; 
         else spriteRenderer.flipX = false;
     }
@@ -85,8 +81,6 @@ public class AvePesqueiro : MonoBehaviour
     {
         if (alvoPeixe != null)
         {
-            // --- AQUI ESTÁ A MUDANÇA PRINCIPAL ---
-            // Pega o script NOVO do peixe
             PeixePesqueiro scriptPeixe = alvoPeixe.GetComponent<PeixePesqueiro>();
             
             float risco = 0f;
@@ -95,7 +89,6 @@ public class AvePesqueiro : MonoBehaviour
                 risco = scriptPeixe.chanceDeMorte;
             }
 
-            // Manda o risco para o Gerente
             if (GameManagerPesqueiro.instance != null)
             {
                 GameManagerPesqueiro.instance.TentarRegistrarPeixe(risco);

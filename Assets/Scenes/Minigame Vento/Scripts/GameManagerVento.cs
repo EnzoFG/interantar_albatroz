@@ -34,7 +34,7 @@ public class GameManagerVento : MonoBehaviour
 
     [Header("Configuração de Saída")]
     [Tooltip("O nome exato da cena para onde o jogador voltará")]
-    public string nomeDaCenaDeSaida = "ViagemAlbatroz"; // <--- Mudei para o padrão do seu mapa
+    public string nomeDaCenaDeSaida = "ViagemAlbatroz";
 
     [Header("Cálculo da Média")]
     private float somaTotalVelocidade = 0f;
@@ -60,7 +60,6 @@ public class GameManagerVento : MonoBehaviour
         painelFimDeJogo.SetActive(false);
         Time.timeScale = 1f; 
 
-        // --- TESTE DE CONEXÃO (Igual ao outro minigame) ---
         if (PlayerPrefs.HasKey("EnergiaPlayer"))
         {
             int energiaLida = PlayerPrefs.GetInt("EnergiaPlayer");
@@ -114,7 +113,6 @@ public class GameManagerVento : MonoBehaviour
         int energiaGanha = 0;
         string mensagemResultado = "";
 
-        // Lógica de Pontuação baseada na Velocidade Média
         if (totalQuadrosContados > 0)
         {
             float velocidadeMedia = somaTotalVelocidade / totalQuadrosContados;
@@ -145,24 +143,17 @@ public class GameManagerVento : MonoBehaviour
 
         textoResultadoEnergia.text = mensagemResultado;
 
-        // --- SISTEMA DE INTEGRAÇÃO DE ENERGIA ---
-        
-        // 1. Lê a energia anterior (Padrão 5 se der erro)
         int energiaAnterior = PlayerPrefs.GetInt("EnergiaPlayer", 5);
         
-        // 2. Calcula
         int energiaFinal = energiaAnterior + energiaGanha;
         
-        // 3. Trava entre 0 e 10
         if (energiaFinal > 10) energiaFinal = 10;
         if (energiaFinal < 0) energiaFinal = 0;
 
-        // 4. Salva na chave correta
         PlayerPrefs.SetInt("EnergiaPlayer", energiaFinal);
         PlayerPrefs.Save();
         
         Debug.Log($"VENTO FIM: Tinha {energiaAnterior}. Ganhou {energiaGanha}. Ficou com {energiaFinal}.");
-        // ----------------------------------------
 
         painelFimDeJogo.SetActive(true);
     }
@@ -187,7 +178,7 @@ public class GameManagerVento : MonoBehaviour
             AudioManager.instance.PlayClickSound();
         }
 
-        Time.timeScale = 1f; // Importante para o mapa não ficar pausado
+        Time.timeScale = 1f;
 
         SceneManager.LoadScene(nomeDaCenaDeSaida);
     }

@@ -544,11 +544,11 @@ MonoBehaviour:
   iconeClicavelCima: {fileID: 0}
   iconeClicavelBaixo: {fileID: 0}
   nomeCenaMinigame: Minigame Vento
-  imagemDoPainel: {fileID: -3979722200442612262, guid: a2fa2bd68b1b7be44b7b5937854022a2, type: 3}
-  textoExplicativo: Lore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore Ipsum
+  imagemDoPainel: {fileID: -771212964238599881, guid: f33376be1ee18c542835e4fe39fe3a75, type: 3}
+  textoExplicativo: "\t          Correntes de Ar\n\nPara economizar energia durante
+    a viagem, o albatroz raramente bate suas asas gigantes. Ele mant\xE9m as asas
+    abertas e aproveita as correntes de vento. Ele pode chegar a ultrapassar a marca
+    dos 120 km/h apenas planando."
 --- !u!212 &129164934
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1088,8 +1088,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 224.56152, y: 490.59998}
-  m_SizeDelta: {x: 227.464, y: 60.197}
+  m_AnchoredPosition: {x: 185, y: 495.16}
+  m_SizeDelta: {x: 227.464, y: 74.3707}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &217374466
 MonoBehaviour:
@@ -1176,7 +1176,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -5.3200684, z: 0, w: 0}
+  m_margin: {x: 0, y: 0.1665039, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1394,11 +1394,12 @@ MonoBehaviour:
   iconeClicavelCima: {fileID: 0}
   iconeClicavelBaixo: {fileID: 0}
   nomeCenaMinigame: Minigame Pesqueiro
-  imagemDoPainel: {fileID: 4127786816108171140, guid: f6cb73980b297634dadc629a05d502f2, type: 3}
-  textoExplicativo: Lore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore Ipsum
+  imagemDoPainel: {fileID: 6827098389806591286, guid: 4b1219d3a20d0d446a5113719a292a7f, type: 3}
+  textoExplicativo: "                  Pesca com Espinh\xE9is\n\nA pesca com espinhel
+    \xE9 uma das principais causas de mortalidade de albatrozes no mundo. Atra\xEDdas
+    pelos peixes que os barcos trazem \xE0 superf\xEDcie, as aves mergulham sem hesitar,
+    sem saber que ali existem anz\xF3is afiados. Uma vez presa, a ave raramente consegue
+    se soltar."
 --- !u!1 &314424188
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,7 +1494,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1422.4773, y: 887.2657}
+  m_SizeDelta: {x: 1640, y: 900}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &326542262
 MonoBehaviour:
@@ -1666,11 +1667,12 @@ MonoBehaviour:
   iconeClicavelCima: {fileID: 0}
   iconeClicavelBaixo: {fileID: 0}
   nomeCenaMinigame: Minigame Barco
-  imagemDoPainel: {fileID: 4127786816108171140, guid: f6cb73980b297634dadc629a05d502f2, type: 3}
-  textoExplicativo: Lore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore Ipsum
+  imagemDoPainel: {fileID: 1264203703013696583, guid: 0ae98e25baff71841b7617ca6081b382, type: 3}
+  textoExplicativo: "\t        Barcos Modernos\n\nO Toriline \xE9 um espantalho marinho
+    que afasta os albatrozes dos anz\xF3is com suas fitas coloridas, criando uma
+    barreira visual. Com o apoio do Projeto Albatroz, essa e outras tecnologias,
+    como iscas camufladas, garantem que as aves mergulhem em seguran\xE7a pr\xF3ximo
+    aos barcos."
 --- !u!212 &349218127
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1890,11 +1892,11 @@ MonoBehaviour:
   iconeClicavelCima: {fileID: 0}
   iconeClicavelBaixo: {fileID: 0}
   nomeCenaMinigame: Minigame Vento
-  imagemDoPainel: {fileID: -3979722200442612262, guid: a2fa2bd68b1b7be44b7b5937854022a2, type: 3}
-  textoExplicativo: Lore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore Ipsum
+  imagemDoPainel: {fileID: -771212964238599881, guid: f33376be1ee18c542835e4fe39fe3a75, type: 3}
+  textoExplicativo: "\t          Correntes de Ar\n\nPara economizar energia durante
+    a viagem, o albatroz raramente bate suas asas gigantes. Ele mant\xE9m as asas
+    abertas e aproveita as correntes de vento. Ele pode chegar a ultrapassar a marca
+    dos 120 km/h apenas planando."
 --- !u!58 &375791990
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2269,6 +2271,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445032758}
   m_CullTransparentMesh: 1
+--- !u!1 &497428585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 497428586}
+  - component: {fileID: 497428588}
+  - component: {fileID: 497428587}
+  m_Layer: 0
+  m_Name: Texto (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &497428586
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497428585}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1703897392}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -226, y: 153.6}
+  m_SizeDelta: {x: 1045.4465, y: 72.7553}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &497428587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497428585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Voe pelo mundo e chegue at\xE9 o final."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: b851d44f4aa148040bc460fe25e25bb0, type: 2}
+  m_sharedMaterial: {fileID: -248840299654032481, guid: b851d44f4aa148040bc460fe25e25bb0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 56
+  m_fontSizeBase: 56
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &497428588
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497428585}
+  m_CullTransparentMesh: 1
 --- !u!1 &497682587
 GameObject:
   m_ObjectHideFlags: 0
@@ -2280,6 +2418,7 @@ GameObject:
   - component: {fileID: 497682588}
   - component: {fileID: 497682590}
   - component: {fileID: 497682589}
+  - component: {fileID: 497682591}
   m_Layer: 5
   m_Name: PainelDeVitoria
   m_TagString: Untagged
@@ -2307,7 +2446,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1350, y: 690}
+  m_SizeDelta: {x: 1256.2041, y: 588.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &497682589
 MonoBehaviour:
@@ -2347,6 +2486,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 497682587}
   m_CullTransparentMesh: 1
+--- !u!82 &497682591
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497682587}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 35fc8b35fe8828941a3cabad941797b4, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: efdc71d672f64e441a9cd59b290a1474, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &503982948
 GameObject:
   m_ObjectHideFlags: 0
@@ -2794,11 +3030,11 @@ MonoBehaviour:
   iconeClicavelCima: {fileID: 0}
   iconeClicavelBaixo: {fileID: 0}
   nomeCenaMinigame: Minigame Lixo
-  imagemDoPainel: {fileID: 4127786816108171140, guid: f6cb73980b297634dadc629a05d502f2, type: 3}
-  textoExplicativo: Lore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore Ipsum
+  imagemDoPainel: {fileID: -771212964238599881, guid: f33376be1ee18c542835e4fe39fe3a75, type: 3}
+  textoExplicativo: "\t\t    Lixo no Mar\n\nPara um albatroz, uma tampa de garrafa
+    ou um peda\xE7o de rede pode parecer exatamente como um peixe. Ao ingerir esses
+    res\xEDduos, a ave ocupa seu est\xF4mago com algo que n\xE3o pode digerir, sentindo-se
+    cheia enquanto, na verdade, est\xE1 morrendo de fome."
 --- !u!1 &610686303
 GameObject:
   m_ObjectHideFlags: 0
@@ -2948,11 +3184,11 @@ MonoBehaviour:
   iconeClicavelCima: {fileID: 0}
   iconeClicavelBaixo: {fileID: 0}
   nomeCenaMinigame: Minigame Lixo
-  imagemDoPainel: {fileID: 4127786816108171140, guid: f6cb73980b297634dadc629a05d502f2, type: 3}
-  textoExplicativo: Lore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore Ipsum
+  imagemDoPainel: {fileID: -771212964238599881, guid: f33376be1ee18c542835e4fe39fe3a75, type: 3}
+  textoExplicativo: "\t\t    Lixo no Mar\n\nPara um albatroz, uma tampa de garrafa
+    ou um peda\xE7o de rede pode parecer exatamente como um peixe. Ao ingerir esses
+    res\xEDduos, a ave ocupa seu est\xF4mago com algo que n\xE3o pode digerir, sentindo-se
+    cheia enquanto, na verdade, est\xE1 morrendo de fome."
 --- !u!1 &630036919
 GameObject:
   m_ObjectHideFlags: 0
@@ -3044,7 +3280,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 405.3733, y: -209.03159}
+  m_AnchoredPosition: {x: 405.3733, y: -207.2}
   m_SizeDelta: {x: 332.8198, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &631454972
@@ -3153,6 +3389,58 @@ PrefabInstance:
       propertyPath: m_Name
       value: SistemaDePausa
       objectReference: {fileID: 0}
+    - target: {fileID: 1460434814624372413, guid: 2a7ca018254e55d4782cebef56a3eda4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -864
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460434814624372413, guid: 2a7ca018254e55d4782cebef56a3eda4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670939423638256672, guid: 2a7ca018254e55d4782cebef56a3eda4, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670939423638256672, guid: 2a7ca018254e55d4782cebef56a3eda4, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670939423638256672, guid: 2a7ca018254e55d4782cebef56a3eda4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670939423638256672, guid: 2a7ca018254e55d4782cebef56a3eda4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670939423638256672, guid: 2a7ca018254e55d4782cebef56a3eda4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670939423638256672, guid: 2a7ca018254e55d4782cebef56a3eda4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670939423638256672, guid: 2a7ca018254e55d4782cebef56a3eda4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670939423638256672, guid: 2a7ca018254e55d4782cebef56a3eda4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670939423638256672, guid: 2a7ca018254e55d4782cebef56a3eda4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670939423638256672, guid: 2a7ca018254e55d4782cebef56a3eda4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075116817081982453, guid: 2a7ca018254e55d4782cebef56a3eda4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000061035156
+      objectReference: {fileID: 0}
     - target: {fileID: 5549330394969782266, guid: 2a7ca018254e55d4782cebef56a3eda4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 809.2936
@@ -3192,6 +3480,18 @@ PrefabInstance:
     - target: {fileID: 5549330394969782266, guid: 2a7ca018254e55d4782cebef56a3eda4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963714897423133573, guid: 2a7ca018254e55d4782cebef56a3eda4, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963714897423133573, guid: 2a7ca018254e55d4782cebef56a3eda4, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963714897423133573, guid: 2a7ca018254e55d4782cebef56a3eda4, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3374,6 +3674,81 @@ Transform:
   - {fileID: 1677315997}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &672386352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 672386353}
+  - component: {fileID: 672386355}
+  - component: {fileID: 672386354}
+  m_Layer: 0
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &672386353
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672386352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1703897392}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 8.5, y: -170}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &672386354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672386352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3605631945907733440, guid: e32b7301b003117498c42d9a4d327d3d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &672386355
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672386352}
+  m_CullTransparentMesh: 1
 --- !u!1 &810601406
 GameObject:
   m_ObjectHideFlags: 0
@@ -3414,11 +3789,11 @@ MonoBehaviour:
   iconeClicavelCima: {fileID: 0}
   iconeClicavelBaixo: {fileID: 0}
   nomeCenaMinigame: Minigame Peixe
-  imagemDoPainel: {fileID: 4127786816108171140, guid: f6cb73980b297634dadc629a05d502f2, type: 3}
-  textoExplicativo: Lore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore Ipsum
+  imagemDoPainel: {fileID: -3144138184220008844, guid: c9e0288bc0a19244e8bc66e85d7ad4a5, type: 3}
+  textoExplicativo: "\t   Mergulho em Alto Mar\n\nPara suportar viagens longas, o
+    albatroz precisa se alimentar constantemente. Sua dieta \xE9 baseada em peixes,
+    lulas e crust\xE1ceos. Em um \xFAnico dia de pesca farta, esta ave consegue consumir
+    at\xE9 um quarto do seu pr\xF3prio peso corporal."
 --- !u!212 &810601408
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3732,11 +4107,12 @@ MonoBehaviour:
   iconeClicavelCima: {fileID: 0}
   iconeClicavelBaixo: {fileID: 0}
   nomeCenaMinigame: Minigame Pesqueiro
-  imagemDoPainel: {fileID: 4127786816108171140, guid: f6cb73980b297634dadc629a05d502f2, type: 3}
-  textoExplicativo: Lore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore Ipsum
+  imagemDoPainel: {fileID: 6827098389806591286, guid: 4b1219d3a20d0d446a5113719a292a7f, type: 3}
+  textoExplicativo: "                  Pesca com Espinh\xE9is\n\nA pesca com espinhel
+    \xE9 uma das principais causas de mortalidade de albatrozes no mundo. Atra\xEDdas
+    pelos peixes que os barcos trazem \xE0 superf\xEDcie, as aves mergulham sem hesitar,
+    sem saber que ali existem anz\xF3is afiados. Uma vez presa, a ave raramente consegue
+    se soltar."
 --- !u!1 &854493470
 GameObject:
   m_ObjectHideFlags: 0
@@ -3836,7 +4212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 639.2, y: 490.6}
+  m_AnchoredPosition: {x: 598.18, y: 490.6}
   m_SizeDelta: {x: 299.2057, y: 28.7944}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &865510457
@@ -3885,7 +4261,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 0
+  m_Spacing: 2
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -3977,7 +4353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a8dfe6ff43e6d468e06392249133a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MapaAudioController
-  musicaDoMapa: {fileID: 8300000, guid: 88d67752a8c8c6545b049054feb00353, type: 3}
+  musicaDoMapa: {fileID: 8300000, guid: 39aff8d43014d114a8fa97d25cdccdcc, type: 3}
 --- !u!4 &893002863
 Transform:
   m_ObjectHideFlags: 0
@@ -4310,10 +4686,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -4359,8 +4735,9 @@ RectTransform:
   - {fileID: 589725366}
   - {fileID: 204242904}
   - {fileID: 326542261}
-  - {fileID: 865510456}
+  - {fileID: 1449814827}
   - {fileID: 217374465}
+  - {fileID: 865510456}
   - {fileID: 932151032}
   - {fileID: 497682588}
   m_Father: {fileID: 0}
@@ -4459,7 +4836,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 19.3091}
+  m_AnchoredPosition: {x: 0, y: -32.2}
   m_SizeDelta: {x: 1186.9329, y: 89.2318}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &953065293
@@ -5124,7 +5501,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.4099, y: 206}
+  m_AnchoredPosition: {x: 11.4099, y: 183.44}
   m_SizeDelta: {x: 404.2269, y: 85.2864}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1058730610
@@ -5375,11 +5752,11 @@ MonoBehaviour:
   iconeClicavelCima: {fileID: 0}
   iconeClicavelBaixo: {fileID: 0}
   nomeCenaMinigame: Minigame Lixo
-  imagemDoPainel: {fileID: 4127786816108171140, guid: f6cb73980b297634dadc629a05d502f2, type: 3}
-  textoExplicativo: Lore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore Ipsum
+  imagemDoPainel: {fileID: -771212964238599881, guid: f33376be1ee18c542835e4fe39fe3a75, type: 3}
+  textoExplicativo: "\t\t    Lixo no Mar\n\nPara um albatroz, uma tampa de garrafa
+    ou um peda\xE7o de rede pode parecer exatamente como um peixe. Ao ingerir esses
+    res\xEDduos, a ave ocupa seu est\xF4mago com algo que n\xE3o pode digerir, sentindo-se
+    cheia enquanto, na verdade, est\xE1 morrendo de fome."
 --- !u!1 &1139439412
 GameObject:
   m_ObjectHideFlags: 0
@@ -6165,11 +6542,12 @@ MonoBehaviour:
   iconeClicavelCima: {fileID: 0}
   iconeClicavelBaixo: {fileID: 0}
   nomeCenaMinigame: Minigame Pesqueiro
-  imagemDoPainel: {fileID: 4127786816108171140, guid: f6cb73980b297634dadc629a05d502f2, type: 3}
-  textoExplicativo: Lore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore Ipsum
+  imagemDoPainel: {fileID: 6827098389806591286, guid: 4b1219d3a20d0d446a5113719a292a7f, type: 3}
+  textoExplicativo: "                  Pesca com Espinh\xE9is\n\nA pesca com espinhel
+    \xE9 uma das principais causas de mortalidade de albatrozes no mundo. Atra\xEDdas
+    pelos peixes que os barcos trazem \xE0 superf\xEDcie, as aves mergulham sem hesitar,
+    sem saber que ali existem anz\xF3is afiados. Uma vez presa, a ave raramente consegue
+    se soltar."
 --- !u!1 &1255030256
 GameObject:
   m_ObjectHideFlags: 0
@@ -6376,6 +6754,81 @@ MonoBehaviour:
   nomeCenaMinigame: 
   imagemDoPainel: {fileID: 0}
   textoExplicativo: 
+--- !u!1 &1308082493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1308082494}
+  - component: {fileID: 1308082496}
+  - component: {fileID: 1308082495}
+  m_Layer: 0
+  m_Name: Image (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1308082494
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308082493}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1703897392}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 109.1, y: -170}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1308082495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308082493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.33490568, g: 0.98548365, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -2412054301495746677, guid: c75d84d7e00ffc34eb151695234d309d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1308082496
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308082493}
+  m_CullTransparentMesh: 1
 --- !u!1 &1316281296
 GameObject:
   m_ObjectHideFlags: 0
@@ -6546,8 +6999,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -450, y: 0}
-  m_SizeDelta: {x: 253, y: 628}
+  m_AnchoredPosition: {x: -388.4, y: 0}
+  m_SizeDelta: {x: 720.8721, y: 628}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1332961632
 MonoBehaviour:
@@ -6901,11 +7354,11 @@ MonoBehaviour:
   iconeClicavelCima: {fileID: 0}
   iconeClicavelBaixo: {fileID: 0}
   nomeCenaMinigame: Minigame Vento
-  imagemDoPainel: {fileID: -3979722200442612262, guid: a2fa2bd68b1b7be44b7b5937854022a2, type: 3}
-  textoExplicativo: Lore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore Ipsum
+  imagemDoPainel: {fileID: -771212964238599881, guid: f33376be1ee18c542835e4fe39fe3a75, type: 3}
+  textoExplicativo: "\t          Correntes de Ar\n\nPara economizar energia durante
+    a viagem, o albatroz raramente bate suas asas gigantes. Ele mant\xE9m as asas
+    abertas e aproveita as correntes de vento. Ele pode chegar a ultrapassar a marca
+    dos 120 km/h apenas planando."
 --- !u!1 &1444542280
 GameObject:
   m_ObjectHideFlags: 0
@@ -6961,6 +7414,81 @@ MonoBehaviour:
   nomeCenaMinigame: 
   imagemDoPainel: {fileID: 0}
   textoExplicativo: 
+--- !u!1 &1449814826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1449814827}
+  - component: {fileID: 1449814829}
+  - component: {fileID: 1449814828}
+  m_Layer: 5
+  m_Name: Fundo Energia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1449814827
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449814826}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 948272417}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 503.198, y: 490.6}
+  m_SizeDelta: {x: 897.5994, y: 77.5932}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1449814828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449814826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.48584908, g: 0.76896536, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7649312749318427029, guid: 8a4c20f63da195d42897d945b4e4d75e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1449814829
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449814826}
+  m_CullTransparentMesh: 1
 --- !u!1 &1476366763
 GameObject:
   m_ObjectHideFlags: 0
@@ -7096,6 +7624,354 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1476366763}
+  m_CullTransparentMesh: 1
+--- !u!1 &1483202265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1483202266}
+  - component: {fileID: 1483202268}
+  - component: {fileID: 1483202267}
+  m_Layer: 0
+  m_Name: Texto (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1483202266
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483202265}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1703897392}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 23.331, y: -157.8}
+  m_SizeDelta: {x: 1544, y: 72.7553}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1483202267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483202265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Aperte nos \xEDcones                                   para escolher seu
+    caminho."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: b851d44f4aa148040bc460fe25e25bb0, type: 2}
+  m_sharedMaterial: {fileID: -248840299654032481, guid: b851d44f4aa148040bc460fe25e25bb0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 56
+  m_fontSizeBase: 56
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1483202268
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483202265}
+  m_CullTransparentMesh: 1
+--- !u!1 &1533545488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1533545489}
+  - component: {fileID: 1533545491}
+  - component: {fileID: 1533545490}
+  m_Layer: 0
+  m_Name: Texto (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1533545489
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533545488}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1703897392}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 314}
+  m_SizeDelta: {x: 1326.9292, y: 118.2658}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1533545490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533545488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Bem Vindo ao Mapa Mundi!
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: b851d44f4aa148040bc460fe25e25bb0, type: 2}
+  m_sharedMaterial: {fileID: -248840299654032481, guid: b851d44f4aa148040bc460fe25e25bb0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 86
+  m_fontSizeBase: 86
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1533545491
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533545488}
+  m_CullTransparentMesh: 1
+--- !u!1 &1534312290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1534312291}
+  - component: {fileID: 1534312293}
+  - component: {fileID: 1534312292}
+  m_Layer: 0
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1534312291
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534312290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1703897392}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 210.3, y: -170}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1534312292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534312290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -2412054301495746677, guid: c75d84d7e00ffc34eb151695234d309d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1534312293
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534312290}
   m_CullTransparentMesh: 1
 --- !u!1 &1539487045
 GameObject:
@@ -7634,6 +8510,81 @@ MonoBehaviour:
   nomeCenaMinigame: 
   imagemDoPainel: {fileID: 0}
   textoExplicativo: 
+--- !u!1 &1681802628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1681802629}
+  - component: {fileID: 1681802631}
+  - component: {fileID: 1681802630}
+  m_Layer: 0
+  m_Name: Image (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1681802629
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681802628}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1703897392}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -92, y: -170}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1681802630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681802628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -6698701936856079676, guid: eada2a94cf367474ba9b103ef6ccac82, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1681802631
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681802628}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1703897391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7642,6 +8593,62 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 269140015116001217, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -690
+      objectReference: {fileID: 0}
+    - target: {fileID: 269140015116001217, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 2688980412868181773, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5365503892684803289, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      propertyPath: idDoTutorial
+      value: TutorialMapa
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966816409473302445, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966816409473302445, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966816409473302445, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966816409473302445, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966816409473302445, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966816409473302445, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966816409473302445, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966816409473302445, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966816409473302445, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966816409473302445, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7728017836291559797, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -7690,11 +8697,55 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9047431262833765127, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9047431262833765127, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 9047431262833765127, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3454406608721615036, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1533545489}
+    - targetCorrespondingSourceObject: {fileID: 3454406608721615036, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 497428586}
+    - targetCorrespondingSourceObject: {fileID: 3454406608721615036, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1856758441}
+    - targetCorrespondingSourceObject: {fileID: 3454406608721615036, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1483202266}
+    - targetCorrespondingSourceObject: {fileID: 3454406608721615036, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1534312291}
+    - targetCorrespondingSourceObject: {fileID: 3454406608721615036, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1308082494}
+    - targetCorrespondingSourceObject: {fileID: 3454406608721615036, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 672386353}
+    - targetCorrespondingSourceObject: {fileID: 3454406608721615036, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1929260345}
+    - targetCorrespondingSourceObject: {fileID: 3454406608721615036, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1681802629}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+--- !u!224 &1703897392 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3454406608721615036, guid: cf609a95bde5f2f41a900fd03ef4e5c0, type: 3}
+  m_PrefabInstance: {fileID: 1703897391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1717713657
 GameObject:
   m_ObjectHideFlags: 0
@@ -7985,11 +9036,11 @@ MonoBehaviour:
   iconeClicavelCima: {fileID: 0}
   iconeClicavelBaixo: {fileID: 0}
   nomeCenaMinigame: Minigame Peixe
-  imagemDoPainel: {fileID: 4127786816108171140, guid: f6cb73980b297634dadc629a05d502f2, type: 3}
-  textoExplicativo: Lore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore Ipsum
+  imagemDoPainel: {fileID: -3144138184220008844, guid: c9e0288bc0a19244e8bc66e85d7ad4a5, type: 3}
+  textoExplicativo: "\t   Mergulho em Alto Mar\n\nPara suportar viagens longas, o
+    albatroz precisa se alimentar constantemente. Sua dieta \xE9 baseada em peixes,
+    lulas e crust\xE1ceos. Em um \xFAnico dia de pesca farta, esta ave consegue consumir
+    at\xE9 um quarto do seu pr\xF3prio peso corporal."
 --- !u!212 &1817613621
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8260,11 +9311,11 @@ MonoBehaviour:
   iconeClicavelCima: {fileID: 0}
   iconeClicavelBaixo: {fileID: 0}
   nomeCenaMinigame: Minigame Peixe
-  imagemDoPainel: {fileID: 4127786816108171140, guid: f6cb73980b297634dadc629a05d502f2, type: 3}
-  textoExplicativo: Lore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore Ipsum
+  imagemDoPainel: {fileID: -3144138184220008844, guid: c9e0288bc0a19244e8bc66e85d7ad4a5, type: 3}
+  textoExplicativo: "\t   Mergulho em Alto Mar\n\nPara suportar viagens longas, o
+    albatroz precisa se alimentar constantemente. Sua dieta \xE9 baseada em peixes,
+    lulas e crust\xE1ceos. Em um \xFAnico dia de pesca farta, esta ave consegue consumir
+    at\xE9 um quarto do seu pr\xF3prio peso corporal."
 --- !u!212 &1826973237
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8429,6 +9480,142 @@ MonoBehaviour:
   nomeCenaMinigame: 
   imagemDoPainel: {fileID: 0}
   textoExplicativo: 
+--- !u!1 &1856758440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1856758441}
+  - component: {fileID: 1856758443}
+  - component: {fileID: 1856758442}
+  m_Layer: 0
+  m_Name: Texto (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1856758441
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856758440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1703897392}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -550.2, y: -40.9}
+  m_SizeDelta: {x: 389.1176, y: 72.7553}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1856758442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856758440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Como jogar:'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: b851d44f4aa148040bc460fe25e25bb0, type: 2}
+  m_sharedMaterial: {fileID: -248840299654032481, guid: b851d44f4aa148040bc460fe25e25bb0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 56
+  m_fontSizeBase: 56
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1856758443
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856758440}
+  m_CullTransparentMesh: 1
 --- !u!1 &1858258426
 GameObject:
   m_ObjectHideFlags: 0
@@ -8594,6 +9781,81 @@ MonoBehaviour:
   nomeCenaMinigame: 
   imagemDoPainel: {fileID: 0}
   textoExplicativo: 
+--- !u!1 &1929260344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1929260345}
+  - component: {fileID: 1929260347}
+  - component: {fileID: 1929260346}
+  m_Layer: 0
+  m_Name: Image (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1929260345
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929260344}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1703897392}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -191.2, y: -170}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1929260346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929260344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7240702443492322277, guid: 7c72f85c8e0246d4c958deec87bee3fb, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1929260347
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929260344}
+  m_CullTransparentMesh: 1
 --- !u!1 &1939634942
 GameObject:
   m_ObjectHideFlags: 0
@@ -8630,8 +9892,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 501.1947, y: -350}
-  m_SizeDelta: {x: 322.3894, y: 90}
+  m_AnchoredPosition: {x: 508.01782, y: -350}
+  m_SizeDelta: {x: 386.7216, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1939634944
 MonoBehaviour:
@@ -8871,8 +10133,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 170, y: 90.56714}
-  m_SizeDelta: {x: 882.4445, y: 458.6321}
+  m_AnchoredPosition: {x: 374.6941, y: 7.4416}
+  m_SizeDelta: {x: 769.3754, y: 624.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2020088758
 MonoBehaviour:
@@ -8903,7 +10165,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4294906368
   m_fontColor: {r: 0, g: 0.07058824, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -8928,7 +10190,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -9122,11 +10384,12 @@ MonoBehaviour:
   iconeClicavelCima: {fileID: 0}
   iconeClicavelBaixo: {fileID: 0}
   nomeCenaMinigame: Minigame Barco
-  imagemDoPainel: {fileID: 4127786816108171140, guid: f6cb73980b297634dadc629a05d502f2, type: 3}
-  textoExplicativo: Lore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore
-    IpsumLore IpsumLore IpsumLore IpsumLore IpsumLore Ipsum
+  imagemDoPainel: {fileID: 1264203703013696583, guid: 0ae98e25baff71841b7617ca6081b382, type: 3}
+  textoExplicativo: "\t        Barcos Modernos\n\nO Toriline \xE9 um espantalho marinho
+    que afasta os albatrozes dos anz\xF3is com suas fitas coloridas, criando uma
+    barreira visual. Com o apoio do Projeto Albatroz, essa e outras tecnologias,
+    como iscas camufladas, garantem que as aves mergulhem em seguran\xE7a pr\xF3ximo
+    aos barcos."
 --- !u!1 &2074529658
 GameObject:
   m_ObjectHideFlags: 0

@@ -47,7 +47,7 @@ public class GameManagerLixo : MonoBehaviour
 
     [Header("Configuração de Saída")]
     [Tooltip("Para qual cena voltar ao clicar no botão")]
-    public string nomeDaCenaDeSaida = "ViagemAlbatroz"; // <--- Ajustado para o Mapa
+    public string nomeDaCenaDeSaida = "ViagemAlbatroz";
     
     [Tooltip("Quantos lixos consumidos = -1 de energia")]
     public int lixosPorEnergiaPerdida = 5;
@@ -80,7 +80,6 @@ public class GameManagerLixo : MonoBehaviour
         AtualizarUITempo();
         AtualizarUILixos();
 
-        // --- TESTE DE CONEXÃO ---
         if (PlayerPrefs.HasKey("EnergiaPlayer"))
         {
             Debug.Log("LIXO START: Energia recebida: " + PlayerPrefs.GetInt("EnergiaPlayer"));
@@ -103,7 +102,6 @@ public class GameManagerLixo : MonoBehaviour
             TerminarJogo();
         }
 
-        // Spawner de Lixo
         timer -= Time.deltaTime;
         if (timer <= 0)
         {
@@ -121,40 +119,29 @@ public class GameManagerLixo : MonoBehaviour
         textoTempo.gameObject.SetActive(false);
         textoLixosConsumidos.gameObject.SetActive(false);
 
-        // --- CÁLCULO DE ENERGIA ---
-
-        // 1. Calcular Penalidade (Quanto perdeu)
         int energiaPerdida = 0;
         if (lixosPorEnergiaPerdida > 0) 
         {
             energiaPerdida = Mathf.FloorToInt((float)lixosConsumidos / lixosPorEnergiaPerdida);
         }
         
-        // --- SISTEMA DE INTEGRAÇÃO ---
-
-        // 2. Ler energia anterior (Segurança: 5)
         int energiaAnterior = PlayerPrefs.GetInt("EnergiaPlayer", 5);
         
-        // 3. Subtrair a penalidade
         int energiaFinal = energiaAnterior - energiaPerdida;
         
-        // 4. Travar limites (0 a 10)
         if (energiaFinal > 10) energiaFinal = 10;
         if (energiaFinal < 0) energiaFinal = 0;
 
-        // 5. Salvar
         PlayerPrefs.SetInt("EnergiaPlayer", energiaFinal);
         PlayerPrefs.Save();
         
         Debug.Log($"LIXO FIM: Tinha {energiaAnterior}. Perdeu {energiaPerdida}. Ficou com {energiaFinal}.");
-        // -----------------------------
 
-        // Atualizar UI do Painel
         textoResultadoLixos.text = $"Lixos Consumidos: {lixosConsumidos}";
         
         if (energiaPerdida > 0)
         {
-            textoResultadoEnergia.text = $"Cuidado! Lixo faz mal.\nEnergia Perdida: -{energiaPerdida}";
+            textoResultadoEnergia.text = $"Cuidado! Lixo faz mal.Energia Perdida: -{energiaPerdida}";
         }
         else
         {
@@ -229,7 +216,6 @@ public class GameManagerLixo : MonoBehaviour
         int randomIndex = Random.Range(0, trashPrefabs.Length);
         GameObject prefabToSpawn = trashPrefabs[randomIndex];
         
-        // Lógica de Deadzone mantida original
         float deadZoneBottom = -deadZoneSize / 2f;
         float deadZoneTop = deadZoneSize / 2f;
         float validBottomZone_Min = spawnYMin;

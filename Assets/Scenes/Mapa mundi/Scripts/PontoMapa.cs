@@ -5,7 +5,7 @@ public class PontoMapa : MonoBehaviour
     [Header("Tipo de Ponto")]
     public bool eBifurcacao = false;
     public bool eMinigame = false;
-    public bool ePontoFinal = false; // <--- ADICIONADO: Marque isso no último ponto
+    public bool ePontoFinal = false;
 
     [Header("Caminho Padrão")]
     public PontoMapa proximoPonto;
@@ -19,10 +19,8 @@ public class PontoMapa : MonoBehaviour
     [Header("DADOS DO MINIGAME (Preencher se for Minigame)")]
     public string nomeCenaMinigame;
     
-    // A imagem que você fez no Canva
     public Sprite imagemDoPainel; 
     
-    // O texto explicativo (TextArea aumenta o espaço para escrever no Inspector)
     [TextArea(3, 10)] 
     public string textoExplicativo;
 
@@ -42,22 +40,21 @@ public class PontoMapa : MonoBehaviour
                 Gizmos.DrawLine(transform.position, primeiroPontoCaminhoBaixo.transform.position);
         }
         
-        // Lógica de Cores para facilitar a visualização no Editor:
         if (ePontoFinal)
         {
-            Gizmos.color = Color.magenta; // Final é roxo/magenta
+            Gizmos.color = Color.magenta;
         }
         else if (eMinigame)
         {
-            Gizmos.color = Color.cyan; // Minigame é ciano
+            Gizmos.color = Color.cyan;
         }
         else if (eBifurcacao)
         {
-            Gizmos.color = Color.yellow; // Bifurcação é amarelo
+            Gizmos.color = Color.yellow;
         }
         else
         {
-            Gizmos.color = Color.blue; // Normal é azul
+            Gizmos.color = Color.blue;
         }
 
         Gizmos.DrawSphere(transform.position, 0.2f);

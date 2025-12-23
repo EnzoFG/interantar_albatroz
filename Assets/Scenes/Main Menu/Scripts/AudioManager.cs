@@ -26,10 +26,8 @@ public class AudioManager : MonoBehaviour
 
     public void PlayClickSound()
     {
-        // Verifica se a fonte existe E se o objeto do jogo ainda está vivo na memória
         if (efeitosSonorosSource != null && efeitosSonorosSource.gameObject != null)
         {
-            // Verifica se o clipe de áudio existe
             if (clickSoundClip != null)
             {
                 efeitosSonorosSource.PlayOneShot(clickSoundClip);
